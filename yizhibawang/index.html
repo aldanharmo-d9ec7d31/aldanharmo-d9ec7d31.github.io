@@ -1,0 +1,1823 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>一只霸王兽双视角黑料51 - 双视角事件与内容聚合</title>
+  <meta name="description" content="一只霸王兽双视角黑料51 聚合双视角视频、争议黑料、反转记录与网友反应，整理51号事件时间线、人物回应、平台规则与内容消费指南，适合关注直播圈动态的读者查阅。">
+  <meta name="keywords" content="一只霸王兽双视角黑料51">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316161c'/%3E%3Cpath d='M14 20h36v6H14zM14 32h24v6H14zM14 44h32v6H14z' fill='%23ff7a45'/%3E%3Ccircle cx='48' cy='46' r='7' fill='%23ffd166'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #f4f1ec;
+      --panel: #ffffff;
+      --ink: #1b1a1f;
+      --ink-2: #4f4b57;
+      --ink-3: #7f7a88;
+      --line: #e3ded6;
+      --brand: #d94f2b;
+      --brand-soft: #fbe9e2;
+      --brand-dark: #a63a1f;
+      --accent: #2f5d62;
+      --accent-soft: #e3eeed;
+      --gold: #c98a1b;
+      --radius-card: 14px;
+      --radius-btn: 10px;
+      --radius-tag: 6px;
+      --radius-banner: 18px;
+      --shadow: 0 2px 10px rgba(27, 26, 31, 0.06);
+      --shadow-hover: 0 10px 26px rgba(27, 26, 31, 0.12);
+      --font: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", sans-serif;
+      --maxw: 1360px;
+      --notice-h: 40px;
+      --header-h: 64px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; scroll-padding-top: calc(var(--notice-h) + var(--header-h) + 16px); }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.72;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { font-family: inherit; cursor: pointer; }
+    ul, ol { list-style: none; }
+
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
+
+    /* ---------- 吸顶公告条 ---------- */
+    .notice-bar {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      background: #16161c;
+      color: #f4f1ec;
+      font-size: 13px;
+      height: var(--notice-h);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .notice-inner {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      width: 100%;
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 22px;
+      white-space: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .notice-inner::-webkit-scrollbar { display: none; }
+    .notice-brand {
+      font-weight: 700;
+      color: #ffb08a;
+      letter-spacing: 0.4px;
+      flex-shrink: 0;
+    }
+    .notice-item { display: inline-flex; align-items: center; gap: 7px; flex-shrink: 0; }
+    .notice-item .dot { width: 5px; height: 5px; border-radius: 50%; background: #ff7a45; flex-shrink: 0; }
+    .notice-item b { color: #ffd166; font-weight: 600; }
+    .notice-date { color: #b9b3c2; font-variant-numeric: tabular-nums; }
+
+    /* ---------- 吸顶页头 ---------- */
+    .site-header {
+      position: sticky;
+      top: var(--notice-h);
+      z-index: 55;
+      background: rgba(244, 241, 236, 0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+      height: var(--header-h);
+    }
+    .header-inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 22px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      flex-shrink: 0;
+    }
+    .logo-mark { width: 32px; height: 32px; }
+    .logo-text {
+      font-weight: 800;
+      font-size: 17px;
+      letter-spacing: 0.5px;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+    .logo-text .num { color: var(--brand); }
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-left: 8px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .main-nav::-webkit-scrollbar { display: none; }
+    .main-nav a {
+      padding: 7px 12px;
+      font-size: 14px;
+      color: var(--ink-2);
+      border-radius: var(--radius-btn);
+      white-space: nowrap;
+      transition: background 0.18s, color 0.18s;
+    }
+    .main-nav a:hover, .main-nav a:focus-visible {
+      background: var(--brand-soft);
+      color: var(--brand-dark);
+      outline: none;
+    }
+    .main-nav a.active { background: var(--brand); color: #fff; }
+
+    .header-tools { margin-left: auto; display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 3px 4px 3px 14px;
+      gap: 6px;
+      transition: border-color 0.18s, box-shadow 0.18s;
+    }
+    .search-box:focus-within { border-color: var(--brand); box-shadow: 0 0 0 3px rgba(217, 79, 43, 0.14); }
+    .search-box input {
+      border: 0;
+      outline: 0;
+      background: transparent;
+      font-size: 13.5px;
+      width: 148px;
+      color: var(--ink);
+      font-family: inherit;
+    }
+    .search-box input::placeholder { color: var(--ink-3); }
+    .search-btn {
+      border: 0;
+      background: var(--brand);
+      color: #fff;
+      border-radius: 999px;
+      padding: 6px 13px;
+      font-size: 13px;
+      transition: background 0.18s;
+    }
+    .search-btn:hover { background: var(--brand-dark); }
+    .btn-ghost {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: var(--radius-btn);
+      padding: 7px 13px;
+      font-size: 13.5px;
+      color: var(--ink-2);
+      transition: border-color 0.18s, color 0.18s;
+    }
+    .btn-ghost:hover { border-color: var(--brand); color: var(--brand-dark); }
+
+    .hamburger {
+      display: none;
+      width: 40px; height: 40px;
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: var(--radius-btn);
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .hamburger span { display: block; width: 18px; height: 2px; background: var(--ink); border-radius: 2px; }
+
+    /* ---------- 首屏 ---------- */
+    .hero {
+      margin: 26px 0 10px;
+    }
+    .hero-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-banner);
+      background:
+        radial-gradient(circle at 82% 18%, rgba(255, 209, 102, 0.22), transparent 34%),
+        radial-gradient(circle at 12% 82%, rgba(217, 79, 43, 0.2), transparent 40%),
+        linear-gradient(128deg, #1d1b24 0%, #2a2430 56%, #3a2a2c 100%);
+      color: #f6f2ec;
+      padding: 48px 46px 44px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.85fr);
+      gap: 30px;
+      align-items: center;
+    }
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(115deg, rgba(255,255,255,0.035) 0 1px, transparent 1px 22px);
+      pointer-events: none;
+    }
+    .hero-left { position: relative; z-index: 1; }
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      letter-spacing: 1.6px;
+      color: #ffb08a;
+      border: 1px solid rgba(255, 176, 138, 0.42);
+      border-radius: 999px;
+      padding: 4px 12px;
+      margin-bottom: 18px;
+    }
+    .hero-kicker .pulse {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: #ff7a45;
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
+    .hero h1 {
+      font-size: clamp(26px, 3.6vw, 44px);
+      line-height: 1.22;
+      letter-spacing: 0.5px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      word-break: break-word;
+    }
+    .hero h1 .accent { color: #ffd166; }
+    .hero-desc {
+      font-size: 15px;
+      color: #d9d2cc;
+      max-width: 46em;
+      margin-bottom: 26px;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .btn-primary {
+      background: var(--brand);
+      color: #fff;
+      border: 0;
+      border-radius: var(--radius-btn);
+      padding: 11px 22px;
+      font-size: 14.5px;
+      font-weight: 600;
+      transition: background 0.18s, transform 0.18s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-primary:hover { background: #ee6039; transform: translateY(-2px); }
+    .btn-outline-light {
+      border: 1px solid rgba(255,255,255,0.32);
+      color: #f2ede7;
+      background: transparent;
+      border-radius: var(--radius-btn);
+      padding: 10px 20px;
+      font-size: 14px;
+      transition: border-color 0.18s, background 0.18s;
+    }
+    .btn-outline-light:hover { border-color: #ffd166; background: rgba(255,255,255,0.06); }
+
+    .hero-right { position: relative; z-index: 1; }
+    .hero-visual {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 16px;
+      padding: 16px 18px;
+      backdrop-filter: blur(6px);
+    }
+    .hv-row { display: flex; align-items: center; justify-content: space-between; padding: 9px 0; border-bottom: 1px dashed rgba(255,255,255,0.13); }
+    .hv-row:last-child { border-bottom: 0; }
+    .hv-label { font-size: 12.5px; color: #b6aea8; letter-spacing: 0.3px; }
+    .hv-value { font-size: 13.5px; font-weight: 600; color: #ffe2cc; }
+    .hv-track { display: flex; align-items: center; gap: 4px; }
+    .hv-bar { height: 7px; width: 64px; background: rgba(255,255,255,0.16); border-radius: 4px; overflow: hidden; }
+    .hv-bar i { display: block; height: 100%; background: linear-gradient(90deg, #ff7a45, #ffd166); border-radius: 4px; }
+    .hv-pct { font-size: 12.5px; color: #ffd166; font-variant-numeric: tabular-nums; }
+
+    /* ---------- 布局 ---------- */
+    .layout {
+      display: grid;
+      grid-template-columns: 176px minmax(0, 1fr) 252px;
+      gap: 26px;
+      margin: 30px 0 46px;
+      align-items: start;
+    }
+    .channel-col { position: sticky; top: calc(var(--notice-h) + var(--header-h) + 18px); }
+    .channel-box {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-card);
+      padding: 14px 12px;
+      box-shadow: var(--shadow);
+    }
+    .channel-box h2 {
+      font-size: 12px;
+      color: var(--ink-3);
+      letter-spacing: 1.6px;
+      font-weight: 700;
+      padding: 2px 10px 10px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 8px;
+    }
+    .channel-list a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      color: var(--ink-2);
+      transition: background 0.16s, color 0.16s;
+    }
+    .channel-list a:hover, .channel-list a:focus-visible {
+      background: var(--brand-soft);
+      color: var(--brand-dark);
+      outline: none;
+    }
+    .channel-list a.current { background: var(--brand); color: #fff; }
+    .channel-list .count { font-size: 11.5px; color: var(--ink-3); }
+    .channel-list a.current .count { color: rgba(255,255,255,0.78); }
+
+    .main-col { min-width: 0; }
+    .side-col { position: sticky; top: calc(var(--notice-h) + var(--header-h) + 18px); display: flex; flex-direction: column; gap: 18px; }
+
+    /* ---------- 通用板块 ---------- */
+    section.block { margin-bottom: 42px; scroll-margin-top: calc(var(--notice-h) + var(--header-h) + 18px); }
+    .block-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; }
+    .block-head h2 {
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .block-head h2::before {
+      content: "";
+      width: 5px; height: 20px;
+      border-radius: 3px;
+      background: linear-gradient(180deg, var(--brand), var(--gold));
+      display: inline-block;
+    }
+    .block-head .head-note { font-size: 12.5px; color: var(--ink-3); }
+    .lead-text { font-size: 14.5px; color: var(--ink-2); margin-bottom: 18px; max-width: 60em; }
+    .lead-text p + p { margin-top: 10px; }
+
+    /* 概览 */
+    .overview-panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-card);
+      padding: 22px 24px;
+      box-shadow: var(--shadow);
+      font-size: 14.5px;
+      color: var(--ink-2);
+    }
+    .overview-panel p + p { margin-top: 12px; }
+    .overview-panel strong { color: var(--ink); }
+
+    /* 精选卡片 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .content-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .content-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); border-color: #d8cfc3; }
+    .card-thumb { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #e7e1d8; }
+    .card-thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .type-tag {
+      position: absolute;
+      left: 10px; top: 10px;
+      background: rgba(22, 22, 28, 0.82);
+      color: #ffd166;
+      font-size: 11.5px;
+      padding: 3px 9px;
+      border-radius: var(--radius-tag);
+      letter-spacing: 0.4px;
+      backdrop-filter: blur(4px);
+    }
+    .card-body { padding: 14px 15px 15px; display: flex; flex-direction: column; gap: 9px; flex: 1; }
+    .card-body h3 { font-size: 15.5px; line-height: 1.42; font-weight: 700; }
+    .card-desc { font-size: 13px; color: var(--ink-2); flex: 1; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      font-size: 11.5px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border-radius: var(--radius-tag);
+      padding: 2px 8px;
+      white-space: nowrap;
+    }
+    .tag.warm { color: var(--brand-dark); background: var(--brand-soft); }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--ink-3);
+      border-top: 1px dashed var(--line);
+      padding-top: 9px;
+    }
+    .heat { color: var(--brand); font-weight: 700; font-variant-numeric: tabular-nums; }
+
+    /* 动态列表 */
+    .update-list { display: flex; flex-direction: column; gap: 2px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-card); padding: 8px 6px; box-shadow: var(--shadow); }
+    .update-item {
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr);
+      gap: 14px;
+      padding: 11px 14px;
+      border-radius: 9px;
+      transition: background 0.16s;
+      align-items: baseline;
+    }
+    .update-item:hover { background: #faf7f2; }
+    .update-time { font-size: 12.5px; color: var(--ink-3); font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .update-body strong { font-size: 14px; font-weight: 700; display: block; margin-bottom: 2px; }
+    .update-body span { font-size: 13px; color: var(--ink-2); }
+
+    /* 分类入口 */
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 12px;
+    }
+    .cat-item {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-card);
+      padding: 15px 16px;
+      box-shadow: var(--shadow);
+      transition: border-color 0.18s, box-shadow 0.18s, transform 0.18s;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .cat-item:hover { border-color: var(--brand); box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+    .cat-item strong { font-size: 14.5px; }
+    .cat-item span { font-size: 12px; color: var(--ink-3); }
+
+    /* 筛选 */
+    .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+    .filter-btn {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 999px;
+      padding: 6px 15px;
+      font-size: 13px;
+      color: var(--ink-2);
+      transition: all 0.16s;
+    }
+    .filter-btn:hover { border-color: var(--brand); color: var(--brand-dark); }
+    .filter-btn.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+    .filter-empty { padding: 26px 16px; text-align: center; color: var(--ink-3); font-size: 14px; background: var(--panel); border: 1px dashed var(--line); border-radius: var(--radius-card); }
+
+    /* 深度解析 */
+    .deep-panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-card);
+      padding: 28px 30px;
+      box-shadow: var(--shadow);
+    }
+    .deep-panel h3 {
+      font-size: 17px;
+      font-weight: 800;
+      margin: 26px 0 10px;
+      padding-left: 12px;
+      border-left: 4px solid var(--brand);
+      line-height: 1.4;
+    }
+    .deep-panel h3:first-child { margin-top: 0; }
+    .deep-panel p { font-size: 14.5px; color: var(--ink-2); margin-bottom: 12px; }
+    .deep-panel ul { margin: 6px 0 14px 0; display: flex; flex-direction: column; gap: 7px; }
+    .deep-panel li { font-size: 14px; color: var(--ink-2); padding-left: 18px; position: relative; }
+    .deep-panel li::before { content: "▸"; position: absolute; left: 0; color: var(--brand); font-size: 12px; top: 2px; }
+    .deep-panel .callout {
+      background: #faf7f2;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--gold);
+      border-radius: 8px;
+      padding: 13px 16px;
+      font-size: 13.5px;
+      color: var(--ink-2);
+      margin: 14px 0;
+    }
+    .compare-table { width: 100%; border-collapse: collapse; margin: 8px 0 16px; font-size: 13.5px; }
+    .compare-table th, .compare-table td { border: 1px solid var(--line); padding: 9px 12px; text-align: left; vertical-align: top; }
+    .compare-table th { background: #f6f1ea; font-weight: 700; color: var(--ink); white-space: nowrap; }
+    .compare-table td { color: var(--ink-2); }
+
+    /* 指南步骤 */
+    .step-list { display: flex; flex-direction: column; gap: 14px; }
+    .step-item {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr);
+      gap: 14px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-card);
+      padding: 16px 18px;
+      box-shadow: var(--shadow);
+    }
+    .step-num {
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--brand-soft);
+      color: var(--brand-dark);
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .step-item h3 { font-size: 15px; margin-bottom: 5px; }
+    .step-item p { font-size: 13.5px; color: var(--ink-2); }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 10px; }
+    details.faq-item {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-card);
+      padding: 0 18px;
+      box-shadow: var(--shadow);
+      transition: border-color 0.18s;
+    }
+    details.faq-item[open] { border-color: #d9bfae; }
+    details.faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 15px 0;
+      font-size: 14.5px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item summary::after {
+      content: "+";
+      font-size: 19px;
+      color: var(--brand);
+      font-weight: 400;
+      transition: transform 0.2s;
+      flex-shrink: 0;
+    }
+    details.faq-item[open] summary::after { content: "−"; }
+    .faq-answer { font-size: 13.8px; color: var(--ink-2); padding: 0 0 16px; }
+
+    /* 评论 */
+    .comment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 12px;
+    }
+    .comment-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-card);
+      padding: 13px 15px;
+      box-shadow: var(--shadow);
+      font-size: 13.3px;
+      color: var(--ink-2);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .comment-user { display: flex; align-items: center; gap: 8px; }
+    .avatar {
+      width: 26px; height: 26px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--brand-soft), var(--accent-soft));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 700; color: var(--brand-dark);
+      flex-shrink: 0;
+    }
+    .comment-name { font-size: 12.5px; font-weight: 700; color: var(--ink); }
+    .comment-time { margin-left: auto; font-size: 11px; color: var(--ink-3); }
+    .comment-text { line-height: 1.65; }
+
+    /* 资讯 */
+    .news-list { display: flex; flex-direction: column; gap: 12px; }
+    .news-item {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-card);
+      padding: 16px 18px;
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 100px;
+      gap: 16px;
+      align-items: center;
+    }
+    .news-item h3 { font-size: 15px; margin-bottom: 5px; }
+    .news-item p { font-size: 13px; color: var(--ink-2); }
+    .news-date { font-size: 12px; color: var(--ink-3); text-align: right; font-variant-numeric: tabular-nums; }
+    .news-item img { width: 100px; height: 68px; object-fit: cover; border-radius: 8px; }
+
+    /* 标签索引 */
+    .tag-index { display: flex; flex-wrap: wrap; gap: 9px; }
+    .tag-index a {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 15px;
+      font-size: 13px;
+      color: var(--ink-2);
+      transition: all 0.16s;
+    }
+    .tag-index a:hover { border-color: var(--brand); color: var(--brand-dark); background: var(--brand-soft); }
+
+    /* 榜单 */
+    .rank-panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-card);
+      padding: 6px 4px;
+      box-shadow: var(--shadow);
+    }
+    .rank-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      transition: background 0.16s;
+    }
+    .rank-item:hover { background: #faf7f2; }
+    .rank-num { width: 22px; font-weight: 800; color: var(--ink-3); font-size: 13px; font-variant-numeric: tabular-nums; flex-shrink: 0; }
+    .rank-item:nth-child(1) .rank-num { color: var(--brand); }
+    .rank-item:nth-child(2) .rank-num { color: var(--gold); }
+    .rank-item:nth-child(3) .rank-num { color: var(--accent); }
+    .rank-title { font-size: 13.5px; flex: 1; min-width: 0; }
+    .rank-heat { font-size: 11.5px; color: var(--ink-3); flex-shrink: 0; }
+
+    /* 侧栏 */
+    .side-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-card);
+      padding: 15px 16px;
+      box-shadow: var(--shadow);
+    }
+    .side-card h3 {
+      font-size: 13px;
+      letter-spacing: 1.2px;
+      color: var(--ink-3);
+      font-weight: 700;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 11px;
+    }
+    .side-list { display: flex; flex-direction: column; gap: 9px; }
+    .side-list li { font-size: 13px; color: var(--ink-2); line-height: 1.55; display: flex; gap: 8px; }
+    .side-list li .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); margin-top: 7px; flex-shrink: 0; }
+    .side-list li time { display: block; font-size: 11.5px; color: var(--ink-3); }
+    .side-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .side-tags a { font-size: 12px; background: #f6f1ea; color: var(--ink-2); border-radius: var(--radius-tag); padding: 4px 9px; transition: background 0.16s, color 0.16s; }
+    .side-tags a:hover { background: var(--brand-soft); color: var(--brand-dark); }
+
+    /* 投稿互动板块 */
+    .submit-panel {
+      background: linear-gradient(120deg, #2a2430, #3a2a2c);
+      color: #f4f1ec;
+      border-radius: var(--radius-card);
+      padding: 26px 28px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
+      gap: 22px;
+      align-items: center;
+      margin-bottom: 42px;
+    }
+    .submit-panel h2 { font-size: 19px; margin-bottom: 8px; }
+    .submit-panel p { font-size: 13.5px; color: #cfc7c0; }
+    .submit-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+
+    /* 页脚 */
+    .site-footer {
+      background: #16161c;
+      color: #b9b3c2;
+      padding: 40px 0 26px;
+      font-size: 13px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 30px;
+      padding-bottom: 26px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .footer-brand { display: flex; align-items: center; gap: 9px; margin-bottom: 12px; }
+    .footer-brand .logo-text { color: #f4f1ec; font-size: 16px; }
+    .footer-desc { font-size: 12.8px; line-height: 1.7; color: #9b95a3; max-width: 34em; }
+    .footer-col h4 { font-size: 12px; color: #f4f1ec; letter-spacing: 1.2px; margin-bottom: 12px; }
+    .footer-col a { display: block; font-size: 12.8px; color: #9b95a3; padding: 3px 0; transition: color 0.16s; }
+    .footer-col a:hover { color: #ffb08a; }
+    .footer-bottom { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; padding-top: 18px; font-size: 12px; color: #7f7a88; }
+
+    /* 回到顶部 */
+    .to-top {
+      position: fixed;
+      right: 20px;
+      bottom: 26px;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      box-shadow: var(--shadow-hover);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.22s, visibility 0.22s, transform 0.22s;
+      transform: translateY(6px);
+      z-index: 50;
+    }
+    .to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
+    .to-top:hover { background: var(--brand); color: #fff; border-color: var(--brand); }
+
+    /* 遮罩 */
+    .overlay {
+      position: fixed; inset: 0;
+      background: rgba(22,22,28,0.45);
+      z-index: 70;
+      display: none;
+    }
+    .overlay.show { display: block; }
+
+    /* 响应式 */
+    @media (max-width: 1180px) {
+      .layout { grid-template-columns: 160px minmax(0, 1fr); }
+      .side-col { position: static; grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    }
+    @media (max-width: 1024px) {
+      .layout { grid-template-columns: minmax(0, 1fr); }
+      .channel-col { position: static; }
+      .channel-box h2 { display: none; }
+      .channel-list { display: flex; gap: 6px; overflow-x: auto; padding: 2px; scrollbar-width: none; }
+      .channel-list::-webkit-scrollbar { display: none; }
+      .channel-list a { flex: 0 0 auto; border: 1px solid var(--line); background: var(--panel); }
+      .channel-list a.current { border-color: var(--brand); }
+      .side-col { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+      .hero-card { grid-template-columns: 1fr; padding: 34px 28px; }
+      .hero-right { display: none; }
+      .submit-panel { grid-template-columns: 1fr; }
+      .submit-actions { justify-content: flex-start; }
+    }
+    @media (max-width: 740px) {
+      .wrap, .header-inner, .notice-inner { padding-left: 14px; padding-right: 14px; }
+      .main-nav { display: none; }
+      .hamburger { display: flex; }
+      .header-tools .search-box { display: none; }
+      .header-tools .btn-ghost { display: none; }
+      .mobile-nav {
+        position: fixed;
+        top: calc(var(--notice-h) + var(--header-h));
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+        padding: 12px 14px 16px;
+        z-index: 65;
+        display: none;
+        flex-direction: column;
+        gap: 3px;
+        box-shadow: var(--shadow-hover);
+        max-height: 70vh;
+        overflow-y: auto;
+      }
+      .mobile-nav.show { display: flex; }
+      .mobile-nav a { padding: 10px 12px; border-radius: 8px; font-size: 14.5px; color: var(--ink-2); }
+      .mobile-nav a:hover { background: var(--brand-soft); color: var(--brand-dark); }
+      .hero { margin-top: 16px; }
+      .hero-card { padding: 26px 20px; }
+      .hero h1 { font-size: 25px; }
+      .hero-desc { font-size: 14px; }
+      .block-head h2 { font-size: 18.5px; }
+      .card-grid { grid-template-columns: 1fr; }
+      .comment-grid { grid-template-columns: 1fr; }
+      .news-item { grid-template-columns: minmax(0, 1fr); }
+      .news-item img { display: none; }
+      .news-date { text-align: left; }
+      .deep-panel { padding: 20px 18px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 22px; }
+      .to-top { right: 14px; bottom: 18px; }
+      .update-item { grid-template-columns: 70px minmax(0, 1fr); gap: 10px; padding: 10px; }
+    }
+    @media (max-width: 380px) {
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+    }
+  </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+  <!-- 吸顶公告条 -->
+  <div class="notice-bar" role="region" aria-label="更新公告">
+    <div class="notice-inner">
+      <span class="notice-brand">一只霸王兽双视角黑料51</span>
+      <span class="notice-item"><span class="dot"></span><span class="notice-date">11月8日</span> <b>《双视角·第51号剪辑》</b> 新增时间线批注</span>
+      <span class="notice-item"><span class="dot"></span><span class="notice-date">11月7日</span> <b>主播“霸王兽”</b> 发布 12 分钟回应视频</span>
+      <span class="notice-item"><span class="dot"></span><span class="notice-date">11月6日</span> <b>“黑料51”</b> 相关词条浏览量破 230 万</span>
+      <span class="notice-item"><span class="dot"></span><span class="notice-date">11月5日</span> <b>双视角对照表</b> 更新第 3 版</span>
+    </div>
+  </div>
+
+  <!-- 吸顶页头 -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="/#top" aria-label="返回首页">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#16161c"/>
+          <path d="M14 20h36v6H14zM14 32h24v6H14zM14 44h32v6H14z" fill="#ff7a45"/>
+          <circle cx="48" cy="46" r="7" fill="#ffd166"/>
+        </svg>
+        <span class="logo-text">一只霸王兽双视角黑料<span class="num">51</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="主题导航">
+        <a href="/#overview" class="active">领域概览</a>
+        <a href="/#featured">精选条目</a>
+        <a href="/#updates">更新动态</a>
+        <a href="/#categories">分类索引</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="search-box">
+          <input type="search" id="siteSearch" placeholder="搜索条目、类型、关键词" aria-label="搜索站内条目">
+          <button class="search-btn" type="button" id="searchBtn">查找</button>
+        </div>
+        <a class="btn-ghost" href="/#submit">投稿入口</a>
+        <button class="hamburger" id="hamburgerBtn" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="mobileNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 移动端菜单 -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="移动端导航">
+    <a href="/#overview">领域概览</a>
+    <a href="/#featured">精选条目</a>
+    <a href="/#updates">更新动态</a>
+    <a href="/#categories">分类索引</a>
+    <a href="/#deep">深度解析</a>
+    <a href="/#guide">体验指南</a>
+    <a href="/#faq">常见问答</a>
+    <a href="/#comments">用户评论</a>
+    <a href="/#news">相关资讯</a>
+    <a href="/#recommend">相关推荐</a>
+    <a href="/#ranking">热门榜单</a>
+    <a href="/#submit">投稿互动</a>
+  </nav>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="wrap" id="top">
+
+    <!-- 首屏 -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-card">
+        <div class="hero-left">
+          <span class="hero-kicker"><span class="pulse"></span>双视角事件追踪 · 第 51 号</span>
+          <h1 id="heroTitle">一只霸王兽双视角黑料51</h1>
+          <p class="hero-desc">
+            汇集主播“霸王兽”第51号争议事件的左右机位剪辑、直播原片时间戳、当事人回应与平台处理记录，按时间线拆解“黑料”来源、传播路径和反转节点。
+          </p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="/#featured">查看精选条目 <span aria-hidden="true">→</span></a>
+            <a class="btn-outline-light" href="/#deep">阅读深度解析</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hv-row"><span class="hv-label">双视角素材</span><span class="hv-value">7 段</span></div>
+            <div class="hv-row"><span class="hv-label">关联直播场次</span><span class="hv-value">3 场</span></div>
+            <div class="hv-row"><span class="hv-label">信源可信分层</span><span class="hv-value">4 级</span></div>
+            <div class="hv-row">
+              <span class="hv-label">事件完整度</span>
+              <span class="hv-track"><span class="hv-bar"><i style="width:72%"></i></span><span class="hv-pct">72%</span></span>
+            </div>
+            <div class="hv-row"><span class="hv-label">最近更新</span><span class="hv-value">11 月 8 日</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 主体三栏 -->
+    <div class="layout">
+
+      <!-- 左频道索引 -->
+      <aside class="channel-col" aria-label="频道索引">
+        <div class="channel-box">
+          <h2>频道索引</h2>
+          <nav class="channel-list" aria-label="频道列表">
+            <a href="/#overview" class="current">领域概览 <span class="count">01</span></a>
+            <a href="/#featured">双视角剪辑 <span class="count">12</span></a>
+            <a href="/#updates">事件时间线 <span class="count">10</span></a>
+            <a href="/#categories">黑料分类 <span class="count">08</span></a>
+            <a href="/#deep">深度解析 <span class="count">06</span></a>
+            <a href="/#guide">消费指南 <span class="count">05</span></a>
+            <a href="/#faq">争议问答 <span class="count">06</span></a>
+            <a href="/#comments">网友评论 <span class="count">16</span></a>
+            <a href="/#news">相关资讯 <span class="count">06</span></a>
+            <a href="/#ranking">热度榜单 <span class="count">08</span></a>
+            <a href="/#submit">投稿互动 <span class="count">04</span></a>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- 主内容 -->
+      <main class="main-col">
+
+        <!-- 领域概览 -->
+        <section class="block" id="overview" aria-labelledby="ovTitle">
+          <div class="block-head">
+            <h2 id="ovTitle">直播争议事件的内容构成与当前关注点</h2>
+            <span class="head-note">2026年11月8日 整理</span>
+          </div>
+          <div class="overview-panel">
+            <p>
+              “双视角黑料”在直播圈里指同一场直播被两个机位或两个录屏者同时记录后产生的对照素材。第51号事件围绕主播“霸王兽”10月29日晚间一场约4小时17分的直播展开，争议点集中在23:41至次日00:06这25分钟内的互动片段。目前流传的版本至少有三个：左机位完整录屏、右机位剪辑版、以及带时间戳字幕的二次解读版。
+            </p>
+            <p>
+              值得关注的具体内容分三类。第一类是<strong>原片与剪辑的差异</strong>：右机位版本删去了00:00至00:03的广告口播，导致观众对“霸王兽”语气转折的判断出现偏差。第二类是<strong>当事人回应的时间线</strong>：11月7日主播账号发布12分钟回应视频，逐条否认“剧本炒作”和“辱骂运营”两项指控，但没有正面回应礼物分成争议。第三类是<strong>平台处理记录</strong>：11月3日该场直播的回放被下架，官方理由是“涉及隐私信息”，而非举报量。
+            </p>
+            <p>
+              围观者目前最常搜的具体词包括“霸王兽 51号 原片”“双视角 时间戳 对照”“00:06 说了什么”。这些搜索指向的是信息缺口，不是事件本身的新进展。已有网友把三段素材按秒对齐做成对照表，标出7处口型与声音不同步的位置，其中第4处已被主播粉丝团承认是剪辑失误。
+            </p>
+          </div>
+        </section>
+
+        <!-- 精选内容推荐 -->
+        <section class="block" id="featured" aria-labelledby="ftTitle">
+          <div class="block-head">
+            <h2 id="ftTitle">双视角素材与解读精选</h2>
+            <span class="head-note">按热度排序 · 共 6 条</span>
+          </div>
+          <div class="card-grid" id="featuredGrid">
+
+            <article class="content-card">
+              <div class="card-thumb">
+                <img src="https://picsum.photos/seed/bws51left/400/300" width="400" height="300" loading="lazy" alt="霸王兽51号事件左机位直播录屏画面截图">
+                <span class="type-tag">原片录屏</span>
+              </div>
+              <div class="card-body">
+                <h3>左机位完整版 23:41—00:06</h3>
+                <p class="card-desc">25分钟争议片段未删减原片，保留广告口播和运营入镜画面。与右机位剪辑版对照可看到第4处口型错位，粉丝团已承认是剪辑失误。</p>
+                <div class="tag-row"><span class="tag warm">原片</span><span class="tag">时间戳</span><span class="tag">未删减</span></div>
+                <div class="card-meta"><span class="heat">热度 9.8万</span><span>11月6日更新</span></div>
+              </div>
+            </article>
+
+            <article class="content-card">
+              <div class="card-thumb">
+                <img src="https://picsum.photos/seed/bws51right/400/300" width="400" height="300" loading="lazy" alt="霸王兽51号事件右机位剪辑版对照画面">
+                <span class="type-tag">剪辑对照</span>
+              </div>
+              <div class="card-body">
+                <h3>右机位剪辑版差异标注</h3>
+                <p class="card-desc">逐帧标出右机位版本与左机位的7处分歧，其中3处为广告口播删除，2处为弹幕遮挡，2处为转场黑屏。差异清单可直接核对。</p>
+                <div class="tag-row"><span class="tag warm">剪辑差异</span><span class="tag">逐帧</span><span class="tag">对照表</span></div>
+                <div class="card-meta"><span class="heat">热度 7.2万</span><span>11月7日更新</span></div>
+              </div>
+            </article>
+
+            <article class="content-card">
+              <div class="card-thumb">
+                <img src="https://picsum.photos/seed/bws51reply/400/300" width="400" height="300" loading="lazy" alt="霸王兽11月7日回应视频画面">
+                <span class="type-tag">当事人回应</span>
+              </div>
+              <div class="card-body">
+                <h3>霸王兽 12 分钟回应视频逐句拆解</h3>
+                <p class="card-desc">11月7日20:14发布的回应，第3分钟承认“语气不好”，第7分钟否认“剧本炒作”，第9分40秒回避礼物分成提问。三处话术边界值得注意。</p>
+                <div class="tag-row"><span class="tag warm">回应</span><span class="tag">逐句</span><span class="tag">话术边界</span></div>
+                <div class="card-meta"><span class="heat">热度 8.9万</span><span>11月7日发布</span></div>
+              </div>
+            </article>
+
+            <article class="content-card">
+              <div class="card-thumb">
+                <img src="https://picsum.photos/seed/bws51timeline/400/300" width="400" height="300" loading="lazy" alt="霸王兽51号事件时间线信息图">
+                <span class="type-tag">时间线</span>
+              </div>
+              <div class="card-body">
+                <h3>51号事件 10 个关键节点</h3>
+                <p class="card-desc">从10月29日直播到11月8日时间线批注更新，10个节点附平台动作：11月3日回放下架、11月5日对照表第3版、11月8日新增批注。</p>
+                <div class="tag-row"><span class="tag warm">时间线</span><span class="tag">平台动作</span><span class="tag">节点</span></div>
+                <div class="card-meta"><span class="heat">热度 6.5万</span><span>11月8日更新</span></div>
+              </div>
+            </article>
+
+            <article class="content-card">
+              <div class="card-thumb">
+                <img src="https://picsum.photos/seed/bws51gift/400/300" width="400" height="300" loading="lazy" alt="霸王兽直播礼物分成相关弹幕截图">
+                <span class="type-tag">争议焦点</span>
+              </div>
+              <div class="card-body">
+                <h3>礼物分成争议的原话与上下文</h3>
+                <p class="card-desc">00:03:12处“这波礼物运营拿多少”的原话完整版，前接15秒沉默，后接运营入镜。剪辑版把沉默删成2秒，改变了对话节奏。</p>
+                <div class="tag-row"><span class="tag warm">礼物分成</span><span class="tag">原话</span><span class="tag">上下文</span></div>
+                <div class="card-meta"><span class="heat">热度 5.8万</span><span>11月6日更新</span></div>
+              </div>
+            </article>
+
+            <article class="content-card">
+              <div class="card-thumb">
+                <img src="https://picsum.photos/seed/bws51take/400/300" width="400" height="300" loading="lazy" alt="网友对霸王兽51号事件的评论聚合截图">
+                <span class="type-tag">反应层</span>
+              </div>
+              <div class="card-body">
+                <h3>网友反应分层：哪些是推测</h3>
+                <p class="card-desc">把11月5日至8日的公开评论按“已核实/待核实/纯推测”分三层。待核实层有47条提到运营入镜画面，纯推测层集中在礼物分成数字。</p>
+                <div class="tag-row"><span class="tag warm">反应分层</span><span class="tag">推测</span><span class="tag">核实</span></div>
+                <div class="card-meta"><span class="heat">热度 4.9万</span><span>11月8日更新</span></div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- 最新更新/动态 -->
+        <section class="block" id="updates" aria-labelledby="upTitle">
+          <div class="block-head">
+            <h2 id="upTitle">51号事件更新动态</h2>
+            <span class="head-note">按时间倒序 · 11月8日</span>
+          </div>
+          <div class="update-list">
+            <div class="update-item">
+              <span class="update-time">11月8日 10:22</span>
+              <div class="update-body">
+                <strong>双视角对照表更新至第3版</strong>
+                <span>新增00:03:12至00:03:27的礼物分成原话完整段落，标注出剪辑版删去的15秒沉默。</span>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="update-time">11月7日 20:14</span>
+              <div class="update-body">
+                <strong>主播“霸王兽”发布12分钟回应视频</strong>
+                <span>逐条否认剧本炒作与辱骂运营，未回应礼物分成，视频结尾宣布暂停直播一周。</span>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="update-time">11月7日 15:40</span>
+              <div class="update-body">
+                <strong>粉丝团承认第4处口型错位是剪辑失误</strong>
+                <span>在超话发布说明，称右机位剪辑由外包团队完成，未逐帧校对，向观众致歉。</span>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="update-time">11月6日 22:05</span>
+              <div class="update-body">
+                <strong>“黑料51”词条浏览量突破230万</strong>
+                <span>某内容平台热搜榜最高第7位，主要搜索词为“霸王兽 51 原片”和“双视角 时间戳”。</span>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="update-time">11月5日 18:30</span>
+              <div class="update-body">
+                <strong>第3版双视角对照表发布</strong>
+                <span>新增7处口型与声音不同步的时间戳，其中第4处已被粉丝团承认，第7处仍待核实。</span>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="update-time">11月4日 09:12</span>
+              <div class="update-body">
+                <strong>运营账号“小周在现场”发长文</strong>
+                <span>称当天入镜是临时补位，礼物分成比例按合同执行，未提供合同截图。</span>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="update-time">11月3日 16:47</span>
+              <div class="update-body">
+                <strong>平台下架该场直播回放</strong>
+                <span>官方理由为“涉及隐私信息”，非举报量触发。左机位录屏仍在第三方账号留存。</span>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="update-time">11月2日 21:10</span>
+              <div class="update-body">
+                <strong>右机位剪辑版在短视频平台扩散</strong>
+                <span>单条播放量达89万，评论集中在“语气突变”和“广告口播消失”两个点。</span>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="update-time">10月31日 14:25</span>
+              <div class="update-body">
+                <strong>首个双视角对照帖出现</strong>
+                <span>发布者为录屏爱好者，贴出左右机位同秒截图，指出3处明显差异。</span>
+              </div>
+            </div>
+            <div class="update-item">
+              <span class="update-time">10月29日 23:41</span>
+              <div class="update-body">
+                <strong>争议片段发生</strong>
+                <span>霸王兽直播中与运营就礼物分成发生对话，持续25分钟，左机位完整记录。</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 分类入口 + 筛选 -->
+        <section class="block" id="categories" aria-labelledby="catTitle">
+          <div class="block-head">
+            <h2 id="catTitle">黑料分类与素材筛选</h2>
+            <span class="head-note">点击筛选相关条目</span>
+          </div>
+          <div class="filter-bar" id="filterBar" role="group" aria-label="素材类型筛选">
+            <button class="filter-btn active" data-filter="all" type="button">全部</button>
+            <button class="filter-btn" data-filter="原片" type="button">原片录屏</button>
+            <button class="filter-btn" data-filter="剪辑" type="button">剪辑对照</button>
+            <button class="filter-btn" data-filter="回应" type="button">当事人回应</button>
+            <button class="filter-btn" data-filter="时间线" type="button">时间线</button>
+            <button class="filter-btn" data-filter="争议" type="button">争议焦点</button>
+            <button class="filter-btn" data-filter="反应" type="button">网友反应</button>
+          </div>
+          <div class="cat-grid" id="catGrid">
+            <a class="cat-item" href="/#featured" data-cat="原片"><strong>左机位原片</strong><span>未删减录屏 · 7段</span></a>
+            <a class="cat-item" href="/#featured" data-cat="剪辑"><strong>右机位剪辑</strong><span>差异对照 · 5组</span></a>
+            <a class="cat-item" href="/#featured" data-cat="回应"><strong>当事人回应</strong><span>视频与长文 · 4条</span></a>
+            <a class="cat-item" href="/#updates" data-cat="时间线"><strong>事件时间线</strong><span>10个节点 · 可核对</span></a>
+            <a class="cat-item" href="/#featured" data-cat="争议"><strong>礼物分成争议</strong><span>原话与上下文</span></a>
+            <a class="cat-item" href="/#comments" data-cat="反应"><strong>网友反应分层</strong><span>已核实/待核实/推测</span></a>
+            <a class="cat-item" href="/#deep" data-cat="剪辑"><strong>双视角方法论</strong><span>如何看对照表</span></a>
+            <a class="cat-item" href="/#ranking" data-cat="反应"><strong>热度榜单</strong><span>Top 8 条目</span></a>
+          </div>
+          <div class="filter-empty" id="filterEmpty" hidden>没有匹配该类型的条目，请选择其他分类。</div>
+        </section>
+
+        <!-- 深度解析 -->
+        <section class="block" id="deep" aria-labelledby="deepTitle">
+          <div class="block-head">
+            <h2 id="deepTitle">双视角对照的判断依据与信源分层</h2>
+            <span class="head-note">深度解析 · 约 820 字</span>
+          </div>
+          <div class="deep-panel">
+            <h3>原片与剪辑的差异，关键不在删了多少</h3>
+            <p>
+              右机位剪辑版总时长比左机位短了4分12秒，但真正影响判断的只有三段。第一段是00:00至00:03的广告口播，删掉后“霸王兽”从广告语气切换到对话语气的缓冲消失，观众容易把正常的语气转换读成“突然发火”。第二段是00:03:12处的15秒沉默，剪辑版压成2秒，对话节奏变快，显得运营插话更突兀。第三段是00:05:40的弹幕遮挡，右机位有2秒被弹幕盖住，左机位完整。
+            </p>
+            <p>
+              可核对的结构在这里：把三段差异按“删去内容—造成效果—是否影响争议核心”列成三栏，只有第二段直接影响礼物分成话题的上下文。第一段和第三段属于观看体验差异，不构成信息反转。
+            </p>
+
+            <h3>信源可信度的四个层级</h3>
+            <p>
+              目前围绕51号事件的公开信息，可以按来源拆成四层。第一层是平台留存的直播数据，包括开播时间、礼物总额、回放下架记录，这部分可向平台核实；第二层是当事人和运营的公开回应，有具体发布时间和账号可查，但内容属于单方陈述；第三层是第三方录屏，左机位完整版来自录屏爱好者账号，原始文件哈希值未公开；第四层是二次解读和弹幕截图，传播量最大，可核对性最低。
+            </p>
+            <table class="compare-table">
+              <thead>
+                <tr><th>层级</th><th>代表来源</th><th>可核对项</th><th>缺失项</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>第一层</td><td>平台直播数据</td><td>开播/下播时间、礼物总额</td><td>分成比例不公开</td></tr>
+                <tr><td>第二层</td><td>霸王兽回应视频</td><td>发布时间、逐句内容</td><td>礼物分成未回应</td></tr>
+                <tr><td>第三层</td><td>左机位录屏</td><td>时间戳、画面完整性</td><td>原始文件哈希未公开</td></tr>
+                <tr><td>第四层</td><td>二次解读/弹幕截图</td><td>传播量、评论数</td><td>上下文常被截断</td></tr>
+              </tbody>
+            </table>
+
+            <h3>“传播快”拆开看，是三个环节在起作用</h3>
+            <p>
+              51号事件从10月29日发生到11月6日词条浏览量230万，速度来自三个可拆解的环节。第一个环节是双机位素材同时存在，给对照提供了原料，单机位事件通常不会产生“找不同”式传播。第二个环节是11月2日右机位剪辑版在短视频平台单条播放89万，算法把争议片段推给了非粉丝用户。第三个环节是11月3日平台下架回放，下架动作本身制造了“原片稀缺”的预期，搜索“原片”的量在11月4日达到峰值。
+            </p>
+            <div class="callout">
+              这三个环节里，只有第一个环节是事件自带的，后两个都依赖平台动作和传播选择。换句话说，传播速度不完全由内容争议度决定，下架时机和剪辑版投放时间同样关键。
+            </div>
+
+            <h3>礼物分成争议，目前缺的是合同截图</h3>
+            <p>
+              运营“小周在现场”11月4日长文称分成比例“按合同执行”，但没有提供合同截图或关键条款。霸王兽11月7日回应视频第9分40秒被问到分成时，回答转向“团队内部事务”。两边都没有给出可核对的数字。围观者目前引用的“三七分”“四六分”说法，最早出现在11月2日一条匿名帖，该帖未附任何凭证。
+            </p>
+            <p>
+              判断这件事的进度，可以看两个节点：合同条款是否被任一方公开，以及平台是否在回放下架说明中提及分成。截至11月8日，两项都没有发生。已公开事实只有直播中00:03:12那句原话和15秒沉默，其余属于当事人陈述或网友推测。
+            </p>
+          </div>
+        </section>
+
+        <!-- 体验指南 -->
+        <section class="block" id="guide" aria-labelledby="guideTitle">
+          <div class="block-head">
+            <h2 id="guideTitle">双视角素材的观看顺序与判断路径</h2>
+            <span class="head-note">内容消费指南</span>
+          </div>
+          <div class="step-list">
+            <div class="step-item">
+              <div class="step-num">1</div>
+              <div>
+                <h3>先看左机位完整版的时间段</h3>
+                <p>从23:41开始看，不要直接从剪辑版入场。左机位保留广告口播和运营入镜，能建立对话的原始节奏。重点看00:03:12前后30秒，那是礼物分成话题的起点。</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">2</div>
+              <div>
+                <h3>再拿对照表核对差异</h3>
+                <p>第3版对照表列出7处口型与声音不同步，其中第4处已被粉丝团承认是剪辑失误。看对照表时先看“是否影响争议核心”一栏，再决定要不要回看原片。</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">3</div>
+              <div>
+                <h3>把回应视频和原片分开看</h3>
+                <p>霸王兽12分钟回应按“承认—否认—回避”三段划分，第3分钟承认语气不好，第7分钟否认剧本炒作，第9分40秒回避分成。回应属于单方陈述，不能替代原片。</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">4</div>
+              <div>
+                <h3>用信源分层给自己划边界</h3>
+                <p>平台数据、当事人陈述、第三方录屏、二次解读四层里，前三层可交叉核对，第四层只能当线索。看到一个说法先问它属于哪一层，再决定信几分。</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">5</div>
+              <div>
+                <h3>比较同类事件时看“下架动作”</h3>
+                <p>51号事件的传播峰值出现在回放下架次日，同类双视角事件如果平台没有下架动作，传播曲线通常平缓。比较时把平台动作单独列一栏，能看清哪些热度是内容带来的。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="block" id="faq" aria-labelledby="faqTitle">
+          <div class="block-head">
+            <h2 id="faqTitle">关于51号事件的常见问答</h2>
+            <span class="head-note">6 个问题</span>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>霸王兽51号事件的“双视角”具体指哪两个机位？</summary>
+              <div class="faq-answer">左机位是直播主画面录屏，完整保留广告口播和运营入镜；右机位是另一录屏者从不同窗口捕捉的版本，剪辑后发布，删去了4分12秒内容，其中3处与争议相关。两个机位的时间戳可以按秒对齐。</div>
+            </details>
+            <details class="faq-item">
+              <summary>00:03:12那句礼物分成原话到底说了什么？</summary>
+              <div class="faq-answer">原话是“这波礼物运营拿多少”，前后各有15秒沉默和运营入镜画面。剪辑版把15秒沉默压成2秒，导致运营插话显得更突兀。完整段落只在左机位和11月8日更新的第3版对照表中可见。</div>
+            </details>
+            <details class="faq-item">
+              <summary>右机位剪辑版删掉的广告口播为什么重要？</summary>
+              <div class="faq-answer">广告口播是“霸王兽”从推广语气切回对话语气的缓冲。删掉后两种语气直接相邻，观众容易把正常的语气转换读成“突然发火”。这段删除不影响礼物分成话题的上下文，但影响对主播情绪的判断。</div>
+            </details>
+            <details class="faq-item">
+              <summary>平台下架回放的理由是“涉及隐私信息”，这个说法可信吗？</summary>
+              <div class="faq-answer">平台在11月3日16:47的站内通知中写的是“涉及隐私信息”，没有提及举报量或分成争议。隐私理由通常指向画面中出现的非公开个人信息，运营入镜画面是否属于此类，平台未进一步说明。该通知本身属于第一层可核实信息，但理由是否充分需要看后续是否补充说明。</div>
+            </details>
+            <details class="faq-item">
+              <summary>网友说的“三七分”“四六分”有依据吗？</summary>
+              <div class="faq-answer">目前没有可核对的合同截图。最早的三七分说法出现在11月2日一条匿名帖，未附凭证。运营“小周在现场”11月4日称按合同执行，同样未提供条款。这些数字属于推测层，不能当作已公开事实引用。</div>
+            </details>
+            <details class="faq-item">
+              <summary>同类双视角事件一般怎么判断哪边更接近原貌？</summary>
+              <div class="faq-answer">看三个地方：原始文件是否公开哈希值、剪辑版是否标注删减位置、当事人回应是否逐条对应。51号事件左机位未公开哈希值，右机位未标注删减位置，霸王兽回应逐条否认但未回应分成，三项都只完成了一部分。</div>
+            </details>
+          </div>
+        </section>
+
+        <!-- 用户评论 -->
+        <section class="block" id="comments" aria-labelledby="cmTitle">
+          <div class="block-head">
+            <h2 id="cmTitle">围观者评论与反应</h2>
+            <span class="head-note">16 条 · 11月5日—8日</span>
+          </div>
+          <div class="comment-grid">
+
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">夜</span><span class="comment-name">夜航船1997</span><span class="comment-time">11月8日</span></div>
+              <p class="comment-text">第4处口型错位确实明显，粉丝团认了也算坦诚。但第7处到现在没说法，对照表里标的是“待核实”，别当结论用。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">剪</span><span class="comment-name">剪刀手老李</span><span class="comment-time">11月7日</span></div>
+              <p class="comment-text">剪过直播切片的人都知道，15秒沉默压成2秒，节奏完全变样。这个操作不一定是故意的，但效果确实误导。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">路</span><span class="comment-name">路过的猹</span><span class="comment-time">11月7日</span></div>
+              <p class="comment-text">回应视频看了两遍。第9分40秒那个停顿太刻意了，问分成直接转内部事务，等于没答。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">小</span><span class="comment-name">小周今天直播吗</span><span class="comment-time">11月6日</span></div>
+              <p class="comment-text">运营入镜那段本身没什么，被截出来放大才变成事。不过合同不晒，确实没法站队。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">数</span><span class="comment-name">数据流阿康</span><span class="comment-time">11月6日</span></div>
+              <p class="comment-text">下架第二天搜索量峰值，这个曲线太典型了。越是说原片没了，越有人去找原片。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">半</span><span class="comment-name">半截烟灰</span><span class="comment-time">11月6日</span></div>
+              <p class="comment-text">说实话对分成数字没那么大兴趣，就想知道00:03:12前面那15秒到底有没有人说话。对照表第3版补了，确实没有。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">阿</span><span class="comment-name">阿凉不凉</span><span class="comment-time">11月5日</span></div>
+              <p class="comment-text">双机位素材看多了，51号这个不算最复杂的。复杂的是回应视频和剪辑版在同一个晚上发，时间挨太近。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">录</span><span class="comment-name">录屏组小张</span><span class="comment-time">11月5日</span></div>
+              <p class="comment-text">左机位没公开哈希值这点挺可惜。有哈希至少能证明文件没被二次处理，现在只能靠时间戳交叉。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">吃</span><span class="comment-name">吃瓜不吐皮</span><span class="comment-time">11月5日</span></div>
+              <p class="comment-text">今天才刷到，补了三个小时录屏。广告口播删掉那段确实影响判断，我一开始也以为主播突然变脸。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">冷</span><span class="comment-name">冷静一下</span><span class="comment-time">11月5日</span></div>
+              <p class="comment-text">两边都没给合同，吵分成吵不出结果。不如先把7处口型错位核完，至少那个有画面可对。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">第</span><span class="comment-name">第五排观众</span><span class="comment-time">11月5日</span></div>
+              <p class="comment-text">回应视频第3分钟承认语气不好，这个认了比不认强。但剧本炒作那条否认得有点急，语速明显快了。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">野</span><span class="comment-name">野指针</span><span class="comment-time">11月5日</span></div>
+              <p class="comment-text">对照表做成三栏挺实用，删去内容—造成效果—是否影响核心，一眼能看出来哪段值得回看。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">今</span><span class="comment-name">今天也没睡</span><span class="comment-time">11月5日</span></div>
+              <p class="comment-text">弱弱问一句，霸王兽暂停直播一周，那一周后回来还播不播这个系列？</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">老</span><span class="comment-name">老猫烧须</span><span class="comment-time">11月5日</span></div>
+              <p class="comment-text">这类事件看多了，最怕的就是把推测层当事实传。11月2日那条匿名帖现在还在被引用，连个截图都没有。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">摸</span><span class="comment-name">摸鱼中队长</span><span class="comment-time">11月5日</span></div>
+              <p class="comment-text">本来只想看个热闹，结果把左机位完整版看完了。4小时17分，比想象中平静，争议片段只占25分钟。</p>
+            </div>
+            <div class="comment-card">
+              <div class="comment-user"><span class="avatar">信</span><span class="comment-name">信源洁癖</span><span class="comment-time">11月5日</span></div>
+              <p class="comment-text">四层分法可以。第二层当事人陈述和第三层录屏要交叉看，单看哪一层都不够。平台数据最硬，可惜分成不公开。</p>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- 相关资讯 -->
+        <section class="block" id="news" aria-labelledby="newsTitle">
+          <div class="block-head">
+            <h2 id="newsTitle">51号事件相关资讯</h2>
+            <span class="head-note">6 条 · 11月3日—8日</span>
+          </div>
+          <div class="news-list">
+            <article class="news-item">
+              <div>
+                <h3>霸王兽回应视频发布 24 小时播放量 156 万</h3>
+                <p>11月7日20:14发布的12分钟视频，截至11月8日18:00播放量156万，评论4.2万条。视频第7分钟否认剧本炒作，第9分40秒回避分成提问，结尾宣布暂停直播一周。</p>
+              </div>
+              <div class="news-date">11月8日</div>
+            </article>
+            <article class="news-item">
+              <div>
+                <h3>第3版双视角对照表新增 15 秒沉默段落</h3>
+                <p>11月8日10:22更新的对照表补入00:03:12至00:03:27完整段落，确认沉默期间无对话。该段落此前只在左机位可见，右机位剪辑版压缩为2秒。</p>
+              </div>
+              <div class="news-date">11月8日</div>
+            </article>
+            <article class="news-item">
+              <div>
+                <h3>粉丝团承认剪辑失误，外包团队未逐帧校对</h3>
+                <p>11月7日15:40粉丝团在超话说明，右机位剪辑由外包团队完成，未逐帧校对，第4处口型错位系剪辑失误，向观众致歉。第7处仍待核实。</p>
+              </div>
+              <div class="news-date">11月7日</div>
+            </article>
+            <article class="news-item">
+              <div>
+                <h3>“黑料51”词条浏览量 230 万，热搜最高第 7</h3>
+                <p>11月6日22:05某内容平台数据显示，词条浏览量突破230万，热搜榜最高第7位。主要搜索词为“霸王兽 51 原片”和“双视角 时间戳”，搜索峰值出现在11月4日。</p>
+              </div>
+              <div class="news-date">11月6日</div>
+            </article>
+            <article class="news-item">
+              <div>
+                <h3>运营“小周在现场”发长文，未提供合同截图</h3>
+                <p>11月4日09:12运营账号发布长文，称当天入镜是临时补位，礼物分成比例按合同执行，未提供合同截图或关键条款。长文评论区关闭。</p>
+              </div>
+              <div class="news-date">11月4日</div>
+            </article>
+            <article class="news-item">
+              <div>
+                <h3>平台下架直播回放，理由为“涉及隐私信息”</h3>
+                <p>11月3日16:47平台下架该场直播回放，站内通知写明“涉及隐私信息”，未提及举报量或分成争议。左机位录屏仍在第三方账号留存，右机位剪辑版继续传播。</p>
+              </div>
+              <div class="news-date">11月3日</div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 相关推荐 -->
+        <section class="block" id="recommend" aria-labelledby="recTitle">
+          <div class="block-head">
+            <h2 id="recTitle">相关推荐与内容方向</h2>
+            <span class="head-note">标签索引</span>
+          </div>
+          <div class="tag-index">
+            <a href="/#featured">霸王兽 51 号左机位原片</a>
+            <a href="/#featured">右机位剪辑差异对照</a>
+            <a href="/#deep">双视角信源分层方法</a>
+            <a href="/#updates">51 号事件时间线</a>
+            <a href="/#featured">礼物分成原话完整版</a>
+            <a href="/#faq">回放下架理由核实</a>
+            <a href="/#guide">直播录屏观看顺序</a>
+            <a href="/#comments">网友反应分层记录</a>
+          </div>
+        </section>
+
+        <!-- 补充板块：热度榜单 -->
+        <section class="block" id="ranking" aria-labelledby="rankTitle">
+          <div class="block-head">
+            <h2 id="rankTitle">51号事件条目热度榜</h2>
+            <span class="head-note">截至11月8日</span>
+          </div>
+          <div class="rank-panel">
+            <div class="rank-item"><span class="rank-num">1</span><span class="rank-title">霸王兽 12 分钟回应视频逐句拆解</span><span class="rank-heat">8.9万</span></div>
+            <div class="rank-item"><span class="rank-num">2</span><span class="rank-title">左机位完整版 23:41—00:06</span><span class="rank-heat">9.8万</span></div>
+            <div class="rank-item"><span class="rank-num">3</span><span class="rank-title">右机位剪辑版差异标注</span><span class="rank-heat">7.2万</span></div>
+            <div class="rank-item"><span class="rank-num">4</span><span class="rank-title">51 号事件 10 个关键节点</span><span class="rank-heat">6.5万</span></div>
+            <div class="rank-item"><span class="rank-num">5</span><span class="rank-title">礼物分成原话与上下文</span><span class="rank-heat">5.8万</span></div>
+            <div class="rank-item"><span class="rank-num">6</span><span class="rank-title">网友反应分层：哪些是推测</span><span class="rank-heat">4.9万</span></div>
+            <div class="rank-item"><span class="rank-num">7</span><span class="rank-title">第 3 版双视角对照表</span><span class="rank-heat">4.3万</span></div>
+            <div class="rank-item"><span class="rank-num">8</span><span class="rank-title">运营“小周在现场”长文解读</span><span class="rank-heat">3.7万</span></div>
+          </div>
+        </section>
+
+        <!-- 投稿互动 -->
+        <section class="block" id="submit" aria-labelledby="submitTitle">
+          <div class="submit-panel">
+            <div>
+              <h2 id="submitTitle">投稿你的双视角素材或事件记录</h2>
+              <p>如果你手上有51号事件的另一机位录屏、未公开时间戳或当事人后续回应，可以投递线索。需要附上原始文件名和大致录制时间，便于交叉核对。</p>
+            </div>
+            <div class="submit-actions">
+              <a class="btn-primary" href="/#submit">提交素材线索</a>
+              <a class="btn-outline-light" href="/#comments">参与讨论</a>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- 右辅助栏 -->
+      <aside class="side-col" aria-label="辅助信息">
+
+        <div class="side-card">
+          <h3>今日更新</h3>
+          <ul class="side-list">
+            <li><span class="dot"></span><span>对照表第3版补入15秒沉默<time>11月8日 10:22</time></span></li>
+            <li><span class="dot"></span><span>回应视频播放量达156万<time>11月8日 18:00</time></span></li>
+            <li><span class="dot"></span><span>左机位录屏新增时间戳批注<time>11月8日 09:10</time></span></li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h3>信源层级速查</h3>
+          <ul class="side-list">
+            <li><span class="dot"></span><span>第一层：平台直播数据（可核实）</span></li>
+            <li><span class="dot"></span><span>第二层：当事人回应（单方陈述）</span></li>
+            <li><span class="dot"></span><span>第三层：第三方录屏（待公开哈希）</span></li>
+            <li><span class="dot"></span><span>第四层：二次解读（仅作线索）</span></li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h3>相关搜索词</h3>
+          <div class="side-tags">
+            <a href="/#featured">霸王兽 51 原片</a>
+            <a href="/#deep">双视角 时间戳</a>
+            <a href="/#faq">回放下架理由</a>
+            <a href="/#featured">00:03:12 原话</a>
+            <a href="/#guide">录屏对照方法</a>
+            <a href="/#news">违约金 分成</a>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <h3>时间线摘要</h3>
+          <ul class="side-list">
+            <li><span class="dot"></span><span>10月29日 争议片段发生</span></li>
+            <li><span class="dot"></span><span>11月3日 回放下架</span></li>
+            <li><span class="dot"></span><span>11月7日 当事人回应</span></li>
+            <li><span class="dot"></span><span>11月8日 对照表第3版</span></li>
+          </ul>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true">
+              <rect width="64" height="64" rx="14" fill="#ff7a45"/>
+              <path d="M14 20h36v6H14zM14 32h24v6H14zM14 44h32v6H14z" fill="#16161c"/>
+              <circle cx="48" cy="46" r="7" fill="#ffd166"/>
+            </svg>
+            <span class="logo-text">一只霸王兽双视角黑料<span style="color:#ffd166">51</span></span>
+          </div>
+          <p class="footer-desc">
+            覆盖2026年10月29日至11月8日的双视角素材、当事人回应与平台记录，条目以时间戳、原始文件和信源层级呈现，持续跟踪后续核实进展。
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>内容频道</h4>
+          <a href="/#featured">双视角剪辑</a>
+          <a href="/#updates">事件时间线</a>
+          <a href="/#categories">黑料分类</a>
+          <a href="/#deep">深度解析</a>
+        </div>
+        <div class="footer-col">
+          <h4>参与互动</h4>
+          <a href="/#submit">投稿素材</a>
+          <a href="/#comments">用户评论</a>
+          <a href="/#faq">常见问答</a>
+          <a href="/#ranking">热度榜单</a>
+        </div>
+        <div class="footer-col">
+          <h4>信息说明</h4>
+          <a href="/#overview">领域概览</a>
+          <a href="/#guide">观看指南</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#recommend">推荐标签</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>内容整理于 2026年11月8日 · 条目信息以公开可核对来源为准</span>
+        <span>示例内容聚合页 · 不涉及官方授权或版权归属</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+  <script>
+    (function () {
+      // 移动端菜单
+      var hamburger = document.getElementById('hamburgerBtn');
+      var mobileNav = document.getElementById('mobileNav');
+      var overlay = document.getElementById('overlay');
+
+      function closeMenu() {
+        if (!mobileNav.classList.contains('show')) return;
+        mobileNav.classList.remove('show');
+        overlay.classList.remove('show');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+
+      function openMenu() {
+        mobileNav.classList.add('show');
+        overlay.classList.add('show');
+        hamburger.setAttribute('aria-expanded', 'true');
+      }
+
+      hamburger.addEventListener('click', function () {
+        if (mobileNav.classList.contains('show')) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      overlay.addEventListener('click', closeMenu);
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeMenu();
+      });
+
+      mobileNav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      // 回到顶部
+      var toTop = document.getElementById('toTop');
+      function onScroll() {
+        if (window.scrollY > 560) {
+          toTop.classList.add('show');
+        } else {
+          toTop.classList.remove('show');
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      toTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // 频道高亮（滚动监听）
+      var sections = ['overview', 'featured', 'updates', 'categories', 'deep', 'guide', 'faq', 'comments', 'news', 'ranking', 'submit'];
+      var navLinks = document.querySelectorAll('.main-nav a');
+      var channelLinks = document.querySelectorAll('.channel-list a');
+
+      function setActive(id) {
+        navLinks.forEach(function (a) {
+          var href = a.getAttribute('href');
+          if (href === '/#' + id) a.classList.add('active');
+          else a.classList.remove('active');
+        });
+        channelLinks.forEach(function (a) {
+          var href = a.getAttribute('href');
+          if (href === '/#' + id) a.classList.add('current');
+          else a.classList.remove('current');
+        });
+      }
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      }, { rootMargin: '-25% 0px -60% 0px', threshold: 0.05 });
+
+      sections.forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) observer.observe(el);
+      });
+
+      // 分类筛选
+      var filterBtns = document.querySelectorAll('.filter-btn');
+      var catItems = document.querySelectorAll('#catGrid .cat-item');
+      var catGrid = document.getElementById('catGrid');
+      var filterEmpty = document.getElementById('filterEmpty');
+
+      filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          filterBtns.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          var filter = btn.getAttribute('data-filter');
+          var visibleCount = 0;
+          catItems.forEach(function (item) {
+            var cat = item.getAttribute('data-cat');
+            if (filter === 'all' || cat === filter) {
+              item.style.display = '';
+              visibleCount++;
+            } else {
+              item.style.display = 'none';
+            }
+          });
+          if (visibleCount === 0) {
+            catGrid.style.display = 'none';
+            filterEmpty.hidden = false;
+          } else {
+            catGrid.style.display = '';
+            filterEmpty.hidden = true;
+          }
+        });
+      });
+
+      // 搜索
+      var searchInput = document.getElementById('siteSearch');
+      var searchBtn = document.getElementById('searchBtn');
+      var featuredGrid = document.getElementById('featuredGrid');
+      var featuredCards = featuredGrid.querySelectorAll('.content-card');
+      var searchEmpty = document.createElement('div');
+      searchEmpty.className = 'filter-empty';
+      searchEmpty.textContent = '没有找到匹配的条目，换一个关键词试试。';
+      searchEmpty.style.display = 'none';
+      featuredGrid.parentNode.insertBefore(searchEmpty, featuredGrid.nextSibling);
+
+      function doSearch() {
+        var q = (searchInput.value || '').trim().toLowerCase();
+        if (!q) {
+          featuredCards.forEach(function (c) { c.style.display = ''; });
+          searchEmpty.style.display = 'none';
+          return;
+        }
+        var count = 0;
+        featuredCards.forEach(function (card) {
+          var text = card.textContent.toLowerCase();
+          if (text.indexOf(q) > -1) {
+            card.style.display = '';
+            count++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        if (count === 0) {
+          searchEmpty.style.display = '';
+        } else {
+          searchEmpty.style.display = 'none';
+        }
+      }
+
+      searchBtn.addEventListener('click', doSearch);
+      searchInput.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') doSearch();
+      });
+      searchInput.addEventListener('input', function () {
+        if (!searchInput.value.trim()) {
+          featuredCards.forEach(function (c) { c.style.display = ''; });
+          searchEmpty.style.display = 'none';
+        }
+      });
+    })();
+  </script>
+
+  <!-- 结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "一只霸王兽双视角黑料51",
+    "description": "聚合霸王兽第51号争议事件的双视角素材、当事人回应、时间线与信源分层记录。",
+    "inLanguage": "zh-CN",
+    "about": {
+      "@type": "Thing",
+      "name": "霸王兽第51号直播争议事件"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "霸王兽51号事件的“双视角”具体指哪两个机位？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "左机位是直播主画面录屏，完整保留广告口播和运营入镜；右机位是另一录屏者从不同窗口捕捉的版本，剪辑后发布，删去了4分12秒内容，其中3处与争议相关。两个机位的时间戳可以按秒对齐。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "00:03:12那句礼物分成原话到底说了什么？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "原话是“这波礼物运营拿多少”，前后各有15秒沉默和运营入镜画面。剪辑版把15秒沉默压成2秒，导致运营插话显得更突兀。完整段落只在左机位和11月8日更新的第3版对照表中可见。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "右机位剪辑版删掉的广告口播为什么重要？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "广告口播是霸王兽从推广语气切回对话语气的缓冲。删掉后两种语气直接相邻，观众容易把正常的语气转换读成突然发火。这段删除不影响礼物分成话题的上下文，但影响对主播情绪的判断。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "平台下架回放的理由是“涉及隐私信息”，这个说法可信吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "平台在11月3日16:47的站内通知中写的是“涉及隐私信息”，没有提及举报量或分成争议。隐私理由通常指向画面中出现的非公开个人信息，运营入镜画面是否属于此类，平台未进一步说明。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "网友说的“三七分”“四六分”有依据吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "目前没有可核对的合同截图。最早的三七分说法出现在11月2日一条匿名帖，未附凭证。运营小周在现场11月4日称按合同执行，同样未提供条款。这些数字属于推测层，不能当作已公开事实引用。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "同类双视角事件一般怎么判断哪边更接近原貌？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "看三个地方：原始文件是否公开哈希值、剪辑版是否标注删减位置、当事人回应是否逐条对应。51号事件左机位未公开哈希值，右机位未标注删减位置，霸王兽回应逐条否认但未回应分成，三项都只完成了一部分。"
+        }
+      }
+    ]
+  }
+  </script>
+
+</body>
+                </html>
