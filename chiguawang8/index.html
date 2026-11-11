@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>吃瓜网818 - 娱乐动态与深度解析</title>
+  <meta name="description" content="吃瓜网818汇聚娱乐圈最新动态、综艺热榜与争议事件深度解析，涵盖影视剧集、明星八卦、选秀综艺等具体条目，适合关注娱乐话题的网友浏览。">
+  <meta name="keywords" content="吃瓜网818">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e63946'/%3E%3Ctext x='16' y='22' font-size='18' font-weight='bold' fill='white' text-anchor='middle'%3E818%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --primary: #e63946;
+      --primary-light: #fde8ea;
+      --primary-dark: #b81d2a;
+      --secondary: #1d3557;
+      --secondary-light: #457b9d;
+      --bg: #f8f9fa;
+      --surface: #ffffff;
+      --text-primary: #1a1a2e;
+      --text-secondary: #5a5a6e;
+      --text-tertiary: #8d8d9e;
+      --border: #e2e4e9;
+      --radius-card: 12px;
+      --radius-btn: 8px;
+      --radius-tag: 6px;
+      --radius-banner: 16px;
+      --shadow-default: 0 2px 8px rgba(0,0,0,0.06);
+      --shadow-hover: 0 6px 20px rgba(0,0,0,0.12);
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      --sticky-height: 104px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: var(--sticky-height); }
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+    a { color: var(--primary-dark); text-decoration: none; }
+    a:hover { color: var(--primary); }
+    img { display: block; max-width: 100%; height: auto; }
+    ul { list-style: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    /* 吸顶公告条 + 页头 */
+    .sticky-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .announcement-bar {
+      background: var(--secondary);
+      color: #fff;
+      font-size: 13px;
+      padding: 6px 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none;
+    }
+    .announcement-bar::-webkit-scrollbar { display: none; }
+    .announcement-bar .brand-tag {
+      font-weight: 700;
+      color: #ffd166;
+      flex-shrink: 0;
+    }
+    .announcement-bar .ann-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+    .announcement-bar .ann-date {
+      background: rgba(255,255,255,0.15);
+      padding: 1px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    .header-main {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 12px 24px;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 800;
+      font-size: 16px;
+      letter-spacing: -0.5px;
+      transition: transform 0.2s;
+    }
+    .logo-area:hover .logo-icon { transform: scale(1.04); }
+    .logo-text {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.5px;
+    }
+    .logo-text span { color: var(--primary); }
+    .header-nav {
+      display: flex;
+      gap: 4px;
+      flex: 1;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .header-nav::-webkit-scrollbar { display: none; }
+    .header-nav a {
+      padding: 6px 14px;
+      border-radius: var(--radius-btn);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      white-space: nowrap;
+      transition: background 0.2s, color 0.2s;
+    }
+    .header-nav a:hover,
+    .header-nav a.active {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+    }
+    .header-search {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    .header-search input {
+      width: 180px;
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-btn);
+      font-size: 13px;
+      background: var(--bg);
+      color: var(--text-primary);
+      outline: none;
+      transition: border 0.2s, box-shadow 0.2s;
+    }
+    .header-search input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-light);
+    }
+    .header-search input::placeholder { color: var(--text-tertiary); }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 8px;
+      border-radius: var(--radius-btn);
+      background: var(--bg);
+    }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--text-primary);
+      border-radius: 2px;
+      transition: 0.2s;
+    }
+
+    /* 首屏 */
+    .hero {
+      background: linear-gradient(135deg, #1d3557 0%, #2b4a6f 50%, #1a2a4a 100%);
+      color: #fff;
+      padding: 48px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(230,57,70,0.25) 0%, transparent 70%);
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: 10%;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,209,102,0.15) 0%, transparent 70%);
+    }
+    .hero-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: flex-end;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .hero-text { flex: 1 1 500px; }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -1px;
+    }
+    .hero-desc {
+      font-size: 15px;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.82);
+      max-width: 640px;
+      margin-bottom: 24px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--primary);
+      color: #fff;
+      padding: 10px 24px;
+      border-radius: var(--radius-btn);
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      padding: 10px 24px;
+      border-radius: var(--radius-btn);
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid rgba(255,255,255,0.25);
+      transition: background 0.2s;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.18); }
+    .hero-visual {
+      flex: 0 1 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 13px;
+    }
+    .hero-stat {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .hero-stat .num { font-weight: 700; color: #ffd166; }
+
+    /* 主容器 */
+    .main-container {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 32px 24px 48px;
+    }
+
+    /* 三栏布局 */
+    .layout-three-col {
+      display: grid;
+      grid-template-columns: 180px 1fr 260px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    /* 左频道栏 */
+    .channel-sidebar {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-default);
+      padding: 20px 16px;
+      position: sticky;
+      top: var(--sticky-height);
+    }
+    .channel-sidebar h3 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-tertiary);
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+    .channel-list li { margin-bottom: 2px; }
+    .channel-list a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: var(--radius-btn);
+      font-size: 14px;
+      color: var(--text-secondary);
+      transition: background 0.2s, color 0.2s;
+    }
+    .channel-list a:hover,
+    .channel-list a.active {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-weight: 500;
+    }
+    .channel-list .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--text-tertiary);
+      flex-shrink: 0;
+    }
+    .channel-list a:hover .dot,
+    .channel-list a.active .dot { background: var(--primary); }
+
+    /* 主内容区 */
+    .main-content { min-width: 0; }
+
+    /* 板块通用 */
+    .section-block {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-default);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .section-header h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.3px;
+    }
+    .section-header h2 .accent {
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      background: var(--primary);
+      border-radius: 2px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    .section-more {
+      font-size: 13px;
+      color: var(--text-tertiary);
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .section-more:hover { color: var(--primary); }
+
+    /* 精选卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .content-card {
+      background: var(--bg);
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      transition: box-shadow 0.25s, transform 0.25s;
+      display: flex;
+      flex-direction: column;
+    }
+    .content-card:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-3px);
+    }
+    .card-thumb {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      background: var(--border);
+    }
+    .card-body { padding: 14px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+    .card-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      padding: 2px 8px;
+      border-radius: var(--radius-tag);
+      align-self: flex-start;
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.4;
+      color: var(--text-primary);
+    }
+    .card-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      flex: 1;
+    }
+    .card-meta {
+      display: flex;
+      gap: 12px;
+      font-size: 12px;
+      color: var(--text-tertiary);
+    }
+    .card-meta .hot { color: var(--primary); font-weight: 600; }
+    .card-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .card-tags span {
+      font-size: 11px;
+      background: var(--border);
+      color: var(--text-secondary);
+      padding: 2px 8px;
+      border-radius: var(--radius-tag);
+    }
+
+    /* 最新更新列表 */
+    .update-list { display: flex; flex-direction: column; gap: 2px; }
+    .update-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 12px 10px;
+      border-radius: var(--radius-btn);
+      transition: background 0.2s;
+    }
+    .update-item:hover { background: var(--bg); }
+    .update-time {
+      font-size: 12px;
+      color: var(--text-tertiary);
+      flex-shrink: 0;
+      width: 64px;
+      padding-top: 2px;
+    }
+    .update-body { flex: 1; min-width: 0; }
+    .update-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+    }
+    .update-summary {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .update-badge {
+      font-size: 11px;
+      padding: 1px 7px;
+      border-radius: 4px;
+      background: var(--secondary-light);
+      color: #fff;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 12px;
+    }
+    .category-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding: 18px 12px;
+      background: var(--bg);
+      border-radius: var(--radius-card);
+      text-align: center;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .category-item:hover { background: var(--primary-light); transform: translateY(-2px); }
+    .category-icon {
+      width: 40px; height: 40px;
+      border-radius: 10px;
+      background: var(--primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .category-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .category-count {
+      font-size: 11px;
+      color: var(--text-tertiary);
+    }
+
+    /* 深度解析 */
+    .deep-dive h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 22px 0 10px;
+      padding-left: 12px;
+      border-left: 3px solid var(--primary);
+    }
+    .deep-dive h3:first-of-type { margin-top: 0; }
+    .deep-dive p {
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      line-height: 1.85;
+      margin-bottom: 12px;
+    }
+    .deep-dive ul {
+      list-style: disc;
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+    .deep-dive li {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 4px;
+    }
+    .deep-dive .highlight-box {
+      background: var(--primary-light);
+      border-radius: var(--radius-card);
+      padding: 16px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: var(--text-primary);
+      line-height: 1.8;
+    }
+
+    /* 体验指南 */
+    .guide-steps { display: flex; flex-direction: column; gap: 16px; }
+    .guide-step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .step-num {
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      background: var(--secondary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .step-content h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .step-content p {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 8px; }
+    .faq-list details {
+      background: var(--bg);
+      border-radius: var(--radius-btn);
+      overflow: hidden;
+    }
+    .faq-list summary {
+      padding: 14px 18px;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--text-primary);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      transition: background 0.2s;
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary:hover { background: var(--border); }
+    .faq-list summary::after {
+      content: '+';
+      font-size: 20px;
+      color: var(--text-tertiary);
+      transition: transform 0.2s;
+      flex-shrink: 0;
+    }
+    .faq-list details[open] summary::after {
+      content: '−';
+      transform: rotate(0deg);
+    }
+    .faq-list .faq-answer {
+      padding: 0 18px 16px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+
+    /* 评论 */
+    .comment-list { display: flex; flex-direction: column; gap: 12px; }
+    .comment-item {
+      display: flex;
+      gap: 12px;
+      padding: 12px;
+      background: var(--bg);
+      border-radius: var(--radius-btn);
+    }
+    .comment-avatar {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: var(--secondary-light);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .comment-body { flex: 1; min-width: 0; }
+    .comment-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+    }
+    .comment-name { font-size: 13px; font-weight: 600; color: var(--text-primary); }
+    .comment-date { font-size: 11px; color: var(--text-tertiary); }
+    .comment-text { font-size: 13.5px; color: var(--text-secondary); line-height: 1.7; }
+
+    /* 相关资讯 */
+    .news-list { display: flex; flex-direction: column; gap: 14px; }
+    .news-item {
+      display: flex;
+      gap: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .news-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .news-thumb {
+      width: 120px;
+      height: 80px;
+      border-radius: var(--radius-btn);
+      object-fit: cover;
+      flex-shrink: 0;
+      background: var(--border);
+    }
+    .news-body { flex: 1; min-width: 0; }
+    .news-title {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .news-summary {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .news-meta {
+      font-size: 12px;
+      color: var(--text-tertiary);
+      margin-top: 4px;
+    }
+
+    /* 相关推荐标签 */
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag-cloud a {
+      display: inline-block;
+      padding: 6px 14px;
+      background: var(--bg);
+      border-radius: 20px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      transition: background 0.2s, color 0.2s;
+    }
+    .tag-cloud a:hover { background: var(--primary-light); color: var(--primary-dark); }
+
+    /* 榜单 */
+    .rank-list { display: flex; flex-direction: column; gap: 6px; }
+    .rank-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: var(--radius-btn);
+      transition: background 0.2s;
+    }
+    .rank-item:hover { background: var(--bg); }
+    .rank-num {
+      width: 24px; height: 24px;
+      border-radius: 6px;
+      background: var(--border);
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .rank-item:nth-child(1) .rank-num { background: var(--primary); color: #fff; }
+    .rank-item:nth-child(2) .rank-num { background: var(--primary-dark); color: #fff; }
+    .rank-item:nth-child(3) .rank-num { background: var(--secondary-light); color: #fff; }
+    .rank-title { font-size: 14px; font-weight: 500; flex: 1; }
+    .rank-score { font-size: 12px; color: var(--text-tertiary); }
+
+    /* 右辅助栏 */
+    .aux-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: sticky;
+      top: var(--sticky-height);
+    }
+    .aux-card {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-default);
+      padding: 18px;
+    }
+    .aux-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .aux-card h3 .fire {
+      display: inline-block;
+      width: 6px; height: 16px;
+      background: var(--primary);
+      border-radius: 3px;
+    }
+    .hot-list { display: flex; flex-direction: column; gap: 2px; }
+    .hot-list a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 6px;
+      border-radius: var(--radius-btn);
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      transition: background 0.2s, color 0.2s;
+    }
+    .hot-list a:hover { background: var(--primary-light); color: var(--primary-dark); }
+    .hot-list .hot-index {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-tertiary);
+      width: 18px;
+      flex-shrink: 0;
+    }
+    .hot-list li:nth-child(1) .hot-index,
+    .hot-list li:nth-child(2) .hot-index,
+    .hot-list li:nth-child(3) .hot-index { color: var(--primary); }
+
+    /* 投稿互动 */
+    .submit-card {
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 100%);
+      color: #fff;
+      border-radius: var(--radius-card);
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    .submit-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+    .submit-card p { font-size: 13px; opacity: 0.85; line-height: 1.6; margin-bottom: 14px; }
+    .submit-card .btn-primary { background: #fff; color: var(--secondary); font-size: 13px; padding: 8px 18px; }
+    .submit-card .btn-primary:hover { background: #ffd166; color: var(--secondary); }
+
+    /* 页脚 */
+    .site-footer {
+      background: var(--secondary);
+      color: rgba(255,255,255,0.8);
+      padding: 40px 24px 24px;
+      margin-top: 0;
+    }
+    .footer-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 32px;
+    }
+    .footer-brand .logo-text { color: #fff; font-size: 20px; }
+    .footer-brand p {
+      font-size: 13px;
+      line-height: 1.7;
+      margin-top: 10px;
+      color: rgba(255,255,255,0.6);
+      max-width: 320px;
+    }
+    .footer-col h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .footer-col a {
+      display: block;
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      padding: 4px 0;
+      transition: color 0.2s;
+    }
+    .footer-col a:hover { color: #ffd166; }
+    .footer-bottom {
+      max-width: 1360px;
+      margin: 24px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* 回到顶部 */
+    .back-to-top {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      box-shadow: var(--shadow-hover);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+      z-index: 90;
+      border: none;
+    }
+    .back-to-top.show { opacity: 1; visibility: visible; }
+    .back-to-top:hover { transform: translateY(-3px); background: var(--primary-dark); }
+
+    /* 移动端遮罩 */
+    .overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      z-index: 200;
+    }
+    .overlay.active { display: block; }
+
+    /* 响应式 */
+    @media (max-width: 1024px) {
+      .layout-three-col {
+        grid-template-columns: 1fr 260px;
+      }
+      .channel-sidebar { display: none; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 740px) {
+      :root { --sticky-height: 96px; }
+      .header-main { padding: 10px 16px; gap: 12px; }
+      .header-nav { display: none; }
+      .header-search input { width: 140px; }
+      .hamburger { display: flex; }
+      .layout-three-col { grid-template-columns: 1fr; }
+      .aux-sidebar { position: static; }
+      .main-container { padding: 20px 16px 36px; }
+      .hero { padding: 32px 16px; }
+      .hero-inner { gap: 24px; }
+      .hero-visual { flex: 1 1 100%; }
+      .footer-inner { grid-template-columns: 1fr; gap: 24px; }
+      .section-block { padding: 18px; }
+      .card-grid { grid-template-columns: 1fr 1fr; }
+      .category-grid { grid-template-columns: repeat(3, 1fr); }
+      .news-thumb { width: 90px; height: 60px; }
+      .back-to-top { bottom: 16px; right: 16px; width: 40px; height: 40px; font-size: 18px; }
+      /* 移动端频道抽屉 */
+      .channel-sidebar.mobile-open {
+        display: block;
+        position: fixed;
+        top: 0; left: 0;
+        width: 260px;
+        height: 100vh;
+        z-index: 300;
+        border-radius: 0;
+        overflow-y: auto;
+        padding-top: 24px;
+      }
+    }
+    @media (max-width: 480px) {
+      .card-grid { grid-template-columns: 1fr; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .header-search input { width: 110px; }
+    }
+
+    /* 减少动效 */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* 搜索无结果 */
+    .no-result {
+      padding: 24px;
+      text-align: center;
+      color: var(--text-tertiary);
+      font-size: 14px;
+      display: none;
+    }
+    .no-result.show { display: block; }
+  </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶包装：公告条 + 页头 -->
+<div class="sticky-wrap">
+  <div class="announcement-bar">
+    <span class="brand-tag">吃瓜网818</span>
+    <span class="ann-item"><span class="ann-date">2026-11-08</span> 综艺《跃上高阶职场》第三季阵容官宣</span>
+    <span class="ann-item"><span class="ann-date">2026-11-07</span> 剧集《暗潮》豆瓣开分8.1</span>
+    <span class="ann-item"><span class="ann-date">2026-11-06</span> 歌手林澈巡演加场广州站</span>
+  </div>
+  <header class="header-main">
+    <div class="logo-area">
+      <div class="logo-icon">818</div>
+      <span class="logo-text">吃瓜网<span>818</span></span>
+    </div>
+    <nav class="header-nav" aria-label="主导航">
+      <a href="#channel-index" class="active">首页</a>
+      <a href="#hot-picks">热榜</a>
+      <a href="#latest-updates">最新</a>
+      <a href="#deep-dive">深扒</a>
+      <a href="#guide">指南</a>
+      <a href="#faq">问答</a>
+      <a href="#comments">评论</a>
+      <a href="#news">资讯</a>
+    </nav>
+    <div class="header-search">
+      <input type="search" id="searchInput" placeholder="搜索条目或关键词…" aria-label="搜索站内内容">
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="打开频道菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+</div>
+
+<!-- 遮罩 -->
+<div class="overlay" id="overlay"></div>
+
+<!-- 首屏 -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">娱乐动态 · 深度拆解 · 热议追踪</div>
+      <h1>吃瓜网818</h1>
+      <p class="hero-desc">聚合影视剧集口碑、综艺赛程进展、明星公开动态与粉丝讨论热点。从《暗潮》的剧本争议到《跃上高阶职场》第三季的阵容变化，再到林澈巡演加场的票务讨论，具体条目、时间线和多方回应都放在一起。</p>
+      <div class="hero-actions">
+        <a href="#hot-picks" class="btn-primary">查看今日热榜 →</a>
+        <a href="#latest-updates" class="btn-ghost">最新更新</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-stat"><span>今日收录条目</span><span class="num">47</span></div>
+      <div class="hero-stat"><span>近30天热议事件</span><span class="num">126</span></div>
+      <div class="hero-stat"><span>深度解析篇数</span><span class="num">18</span></div>
+      <div class="hero-stat"><span>用户评论互动</span><span class="num">2,340</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 主容器 -->
+<div class="main-container">
+  <div class="layout-three-col">
+
+    <!-- 左频道索引 -->
+    <aside class="channel-sidebar" id="channelSidebar">
+      <h3>频道索引</h3>
+      <ul class="channel-list">
+        <li><a href="#hot-picks" class="active"><span class="dot"></span>精选推荐</a></li>
+        <li><a href="#latest-updates"><span class="dot"></span>最新动态</a></li>
+        <li><a href="#category-entry"><span class="dot"></span>分类入口</a></li>
+        <li><a href="#deep-dive"><span class="dot"></span>深度解析</a></li>
+        <li><a href="#guide"><span class="dot"></span>体验指南</a></li>
+        <li><a href="#faq"><span class="dot"></span>常见问答</a></li>
+        <li><a href="#comments"><span class="dot"></span>用户评论</a></li>
+        <li><a href="#news"><span class="dot"></span>相关资讯</a></li>
+        <li><a href="#related-tags"><span class="dot"></span>相关推荐</a></li>
+        <li><a href="#rank-board"><span class="dot"></span>热门榜单</a></li>
+        <li><a href="#submit-zone"><span class="dot"></span>投稿互动</a></li>
+      </ul>
+    </aside>
+
+    <!-- 中主内容 -->
+    <main class="main-content">
+
+      <!-- 主题领域概览 -->
+      <section class="section-block" id="overview">
+        <div class="section-header">
+          <h2><span class="accent"></span>娱乐吃瓜领域概览</h2>
+        </div>
+        <p style="font-size:14.5px;color:var(--text-secondary);line-height:1.85;margin-bottom:12px;">影视剧集、综艺节目、音乐演出和明星公开动态构成了当前娱乐讨论的主要内容。剧集方面，2026年10月至11月间《暗潮》《雾港》《长夜将明》三部悬疑剧先后上线，豆瓣评分分别为8.1、7.6和7.9，观众讨论集中在剧本逻辑和配角演技。综艺赛道《跃上高阶职场》第三季于11月6日官宣阵容，刘念、周远、程一舟三位新导师加入，引发对赛制公平性的讨论。音乐演出市场，林澈“回声”巡演在11月7日宣布加场广州站，票务平台显示预约人数已超过场馆容量的4倍。</p>
+        <p style="font-size:14.5px;color:var(--text-secondary);line-height:1.85;">粉丝讨论的焦点还包括选秀节目的资源分配、演员番位争议，以及明星工作室的声明措辞。这些话题的共同特点是：信息碎片化、多方信源交叉、反转频率高。比如《暗潮》编剧与原著作者的署名争议，从11月2日原著作者发微博到11月5日制片方回应，中间经历了三个版本的说法变更。</p>
+      </section>
+
+      <!-- 精选推荐 -->
+      <section class="section-block" id="hot-picks">
+        <div class="section-header">
+          <h2><span class="accent"></span>精选内容推荐</h2>
+          <a href="#rank-board" class="section-more">查看完整榜单 →</a>
+        </div>
+        <div class="card-grid">
+          <article class="content-card">
+            <img src="https://picsum.photos/seed/ancho/400/300" alt="悬疑剧《暗潮》海报" class="card-thumb" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <span class="card-tag">剧集</span>
+              <h3 class="card-title">《暗潮》剧本署名争议</h3>
+              <p class="card-desc">原著作者苏未声11月2日发文称剧版未署名“故事原创”，制片方11月5日回应称合同已约定改编权归属。豆瓣评分从8.4降至8.1。</p>
+              <div class="card-tags"><span>悬疑</span><span>署名权</span><span>苏未声</span></div>
+              <div class="card-meta"><span class="hot">热度 96</span><span>11-05 更新</span></div>
+            </div>
+          </article>
+          <article class="content-card">
+            <img src="https://picsum.photos/seed/gaozhi/400/300" alt="综艺《跃上高阶职场》第三季导师阵容" class="card-thumb" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <span class="card-tag">综艺</span>
+              <h3 class="card-title">《跃上高阶职场》第三季阵容</h3>
+              <p class="card-desc">11月6日官宣刘念、周远、程一舟任导师。刘念此前在《初入职场》中因点评风格引发讨论，这次加盟被部分观众视为“话题担当”。</p>
+              <div class="card-tags"><span>职场综艺</span><span>刘念</span><span>赛制</span></div>
+              <div class="card-meta"><span class="hot">热度 92</span><span>11-06 更新</span></div>
+            </div>
+          </article>
+          <article class="content-card">
+            <img src="https://picsum.photos/seed/linche/400/300" alt="林澈巡演广州站舞台" class="card-thumb" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <span class="card-tag">音乐</span>
+              <h3 class="card-title">林澈“回声”巡演加场</h3>
+              <p class="card-desc">11月7日宣布广州站加开11月22日一场。大麦预约数据显示想看人数突破8.2万，场馆容量约2万。票价维持380—1280元不变。</p>
+              <div class="card-tags"><span>巡演</span><span>广州</span><span>票务</span></div>
+              <div class="card-meta"><span class="hot">热度 89</span><span>11-07 更新</span></div>
+            </div>
+          </article>
+          <article class="content-card">
+            <img src="https://picsum.photos/seed/wugang/400/300" alt="剧集《雾港》剧照" class="card-thumb" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <span class="card-tag">剧集</span>
+              <h3 class="card-title">《雾港》配角线获好评</h3>
+              <p class="card-desc">豆瓣短评区高赞评论集中在刑警赵成宇（张铎饰）的戏份，前六集出场仅38分钟，但“审讯室独白”片段在微博单条播放超420万次。</p>
+              <div class="card-tags"><span>刑侦</span><span>张铎</span><span>群像</span></div>
+              <div class="card-meta"><span class="hot">热度 84</span><span>11-04 更新</span></div>
+            </div>
+          </article>
+          <article class="content-card">
+            <img src="https://picsum.photos/seed/changye/400/300" alt="《长夜将明》主演对手戏" class="card-thumb" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <span class="card-tag">剧集</span>
+              <h3 class="card-title">《长夜将明》结局逻辑争议</h3>
+              <p class="card-desc">11月3日会员收官，第24集真凶揭晓后被部分观众质疑“时间线对不上”。编剧陆遥11月4日在微博发布手记，解释三处时间节点的设计意图。</p>
+              <div class="card-tags"><span>悬疑</span><span>结局</span><span>陆遥</span></div>
+              <div class="card-meta"><span class="hot">热度 81</span><span>11-04 更新</span></div>
+            </div>
+          </article>
+          <article class="content-card">
+            <img src="https://picsum.photos/seed/fanwei/400/300" alt="演员番位争议相关剧集海报" class="card-thumb" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <span class="card-tag">热议</span>
+              <h3 class="card-title">《逆光而行》番位排序变动</h3>
+              <p class="card-desc">10月30日剧方更新海报，原排在第三位的陈屿调整至第二位。陈屿工作室未公开回应，粉丝后援会发布声明要求“明确合同条款”。</p>
+              <div class="card-tags"><span>番位</span><span>陈屿</span><span>海报</span></div>
+              <div class="card-meta"><span class="hot">热度 78</span><span>10-30 更新</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="section-block" id="latest-updates">
+        <div class="section-header">
+          <h2><span class="accent"></span>最新动态</h2>
+          <span class="section-more">截至 2026-11-08</span>
+        </div>
+        <div class="update-list">
+          <div class="update-item">
+            <span class="update-time">今天 09:12</span>
+            <div class="update-body">
+              <div class="update-title">《跃上高阶职场》第三季发布首支预告</div>
+              <div class="update-summary">时长1分47秒，刘念在片中点评选手方案“数据不够支撑结论”，该片段被截取转发。</div>
+            </div>
+            <span class="update-badge">综艺</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">昨天 18:30</span>
+            <div class="update-body">
+              <div class="update-title">林澈巡演广州站加场开票时间确定</div>
+              <div class="update-summary">11月12日12:00在大麦开售，实名制购票，每个账号限购2张。</div>
+            </div>
+            <span class="update-badge">音乐</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11-06 21:05</span>
+            <div class="update-body">
+              <div class="update-title">《暗潮》制片方发布第二份声明</div>
+              <div class="update-summary">补充了合同签署时间2019年6月，并公开了授权范围条款的截图，未提及署名具体方式。</div>
+            </div>
+            <span class="update-badge">剧集</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11-06 14:20</span>
+            <div class="update-body">
+              <div class="update-title">《雾港》导演确认第二季开发中</div>
+              <div class="update-summary">在媒体群访中表示剧本大纲已完成，主演张铎确认回归，预计2027年Q2开机。</div>
+            </div>
+            <span class="update-badge">剧集</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11-05 16:45</span>
+            <div class="update-body">
+              <div class="update-title">苏未声再发微博回应《暗潮》署名</div>
+              <div class="update-summary">称“不反对改编，反对的是将‘故事原创’从片头抹去”，该条微博转发量超过3.1万。</div>
+            </div>
+            <span class="update-badge">热议</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11-04 11:00</span>
+            <div class="update-body">
+              <div class="update-title">《长夜将明》编剧陆遥发布创作手记</div>
+              <div class="update-summary">全文约2800字，逐条解释第23—24集三处时间线设计，承认“第14集的道具时间有误”。</div>
+            </div>
+            <span class="update-badge">剧集</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11-03 20:15</span>
+            <div class="update-body">
+              <div class="update-title">《长夜将明》会员收官</div>
+              <div class="update-summary">收官当晚爱奇艺站内热度值破9200，豆瓣评分从8.2微降至7.9。</div>
+            </div>
+            <span class="update-badge">剧集</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11-02 09:40</span>
+            <div class="update-body">
+              <div class="update-title">苏未声首次发文谈《暗潮》改编</div>
+              <div class="update-summary">微博长文提到“2019年签的是改编授权，不是原创故事买断”，该条被转至豆瓣小组后引发讨论。</div>
+            </div>
+            <span class="update-badge">热议</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">10-30 17:50</span>
+            <div class="update-body">
+              <div class="update-title">《逆光而行》海报番位调整</div>
+              <div class="update-summary">陈屿从领衔主演第三位调至第二位，剧方未说明原因，官微评论区关闭。</div>
+            </div>
+            <span class="update-badge">热议</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">10-28 13:20</span>
+            <div class="update-body">
+              <div class="update-title">林澈“回声”巡演首批城市公布</div>
+              <div class="update-summary">北京、上海、广州、成都四站，广州站原定11月21日单场，场馆为广州体育馆。</div>
+            </div>
+            <span class="update-badge">音乐</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="section-block" id="category-entry">
+        <div class="section-header">
+          <h2><span class="accent"></span>分类入口</h2>
+        </div>
+        <div class="category-grid">
+          <a href="#hot-picks" class="category-item">
+            <div class="category-icon">剧</div>
+            <span class="category-name">热播剧集</span>
+            <span class="category-count">32 条内容</span>
+          </a>
+          <a href="#hot-picks" class="category-item">
+            <div class="category-icon">综</div>
+            <span class="category-name">综艺赛程</span>
+            <span class="category-count">18 条内容</span>
+          </a>
+          <a href="#hot-picks" class="category-item">
+            <div class="category-icon">音</div>
+            <span class="category-name">音乐演出</span>
+            <span class="category-count">14 条内容</span>
+          </a>
+          <a href="#hot-picks" class="category-item">
+            <div class="category-icon">议</div>
+            <span class="category-name">番位争议</span>
+            <span class="category-count">9 条内容</span>
+          </a>
+          <a href="#deep-dive" class="category-item">
+            <div class="category-icon">深</div>
+            <span class="category-name">剧本解析</span>
+            <span class="category-count">11 条内容</span>
+          </a>
+          <a href="#comments" class="category-item">
+            <div class="category-icon">评</div>
+            <span class="category-name">粉丝评论</span>
+            <span class="category-count">2,340 条</span>
+          </a>
+          <a href="#news" class="category-item">
+            <div class="category-icon">讯</div>
+            <span class="category-name">片方声明</span>
+            <span class="category-count">7 条内容</span>
+          </a>
+          <a href="#faq" class="category-item">
+            <div class="category-icon">问</div>
+            <span class="category-name">规则问答</span>
+            <span class="category-count">6 条问答</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- 深度解析 -->
+      <section class="section-block deep-dive" id="deep-dive">
+        <div class="section-header">
+          <h2><span class="accent"></span>深度解析：争议事件的信息层级拆解</h2>
+        </div>
+        <p>《暗潮》署名争议从11月2日发酵到11月6日，信息经历了四个版本。第一层是苏未声的公开微博：原文称“2019年合同明确授权改编，但未约定放弃故事原创署名”。第二层是制片方11月5日的第一份声明：“合同已包含改编权及故事使用授权”，未直接回应署名问题。第三层是11月6日补充声明，公开了合同签署日期2019年6月12日和授权条款截图，但关键署名条款被模糊处理。第四层是豆瓣小组和微博评论区的用户推测，包括“合同里可能写了‘视改编程度而定’”等说法，这些均无信源支撑。</p>
+
+        <h3>已公开事实与待核信息的边界</h3>
+        <p>能核对的只有三件事：合同签署时间2019年6月12日（制片方提供截图）、苏未声11月2日微博原文仍可见、剧集片头字幕至今未出现“故事原创：苏未声”。无法核对的是：合同全文、双方就署名问题的私下沟通记录、改编程度的具体认定标准。把这三项已公开事实和三项待核信息分开看，就能判断哪些讨论有依据、哪些是情绪延伸。</p>
+        <div class="highlight-box">
+          判断一条署名争议的可信度，可以拆成三个可核对项：①片头/片尾字幕是否有署名（截图可查）；②合同相关条款是否被双方公开（目前只有单方截图，且关键部分打码）；③行业协会或编剧协会是否介入（截至11月8日无公开记录）。三项中满足两项才有讨论基础，只满足一项的属于单方说法。
+        </div>
+
+        <h3>番位调整的合同依据与舆论反应</h3>
+        <p>《逆光而行》10月30日海报调整，陈屿从第三位升至第二位。剧方没有公开合同中的番位条款，但粉丝后援会11月1日发布的声明提到了“签约时约定按姓氏笔画排序”这一说法。对比同类型剧集《雾港》，片方在开机时即公布“按角色重要程度排序”，后续未发生变动。两种做法的差异在于：前者把排序规则留到播出前才明确，后者在开机阶段就锁定了预期。</p>
+        <ul>
+          <li>《逆光而行》番位变动时间线：10月30日海报更新→10月31日陈屿工作室点赞粉丝声明→11月1日后援会发长文→11月2日剧方关闭官微评论区。</li>
+          <li>《雾港》的对照：2026年8月开机发布会即公布排序规则，播出至今未调整，豆瓣小组相关讨论帖仅3条。</li>
+          <li>可量化的差异：番位争议词条在微博热搜停留时长，《逆光而行》相关话题累计在榜11.2小时，《雾港》未上榜。</li>
+        </ul>
+
+        <h3>巡演加场的票务逻辑</h3>
+        <p>林澈广州站从单场加到两场，决策依据来自大麦“想看”数据：11月7日显示8.2万人标记想看，场馆容量约2万，供需比约4.1:1。加场消息发布后，二手平台票价从加场前的溢价80%回落至溢价35%左右。这组数字说明加场消息对抑制黄牛价格有直接作用，但幅度有限——35%的溢价仍高于票面。</p>
+        <p>对比同月另一场演出：民谣歌手阿肆11月15日南京站，想看人数1.6万，场馆容量1.2万，供需比1.33:1，未加场，二手溢价约12%。两个案例的差异不在歌手量级，而在供需比是否超过3:1这个加场阈值。</p>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="section-block" id="guide">
+        <div class="section-header">
+          <h2><span class="accent"></span>体验指南：怎么快速判断一条娱乐消息值不值得跟</h2>
+        </div>
+        <div class="guide-steps">
+          <div class="guide-step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>先看信源类型，再看内容</h4>
+              <p>片方官微、平台官方账号、艺人工作室声明属于一手信源；娱乐博主的“独家”和豆瓣小组的“瓜”属于二手转述。一手信源只能证明“说了什么”，不能自动证明“说得对”。比如《暗潮》制片方声明里附了合同截图，但关键条款打码，这条信源的效力就要打折扣。</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>查时间线，找前后矛盾</h4>
+              <p>同一个事件至少找三个时间节点。苏未声事件的时间线：11月2日发微博→11月5日制片方第一份声明→11月6日第二份声明。第二份声明里说“合同已约定改编权”，但第一份声明没提合同细节，这个变化本身就是信息。时间线里出现“补充说明”或“追加回应”的地方，通常是争议核心。</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>比较同类事件的处理方式</h4>
+              <p>番位争议不是第一次出现。2025年《焰火》番位调整时，片方当天公开了合同排序条款的截图，争议在48小时内平息。对比《逆光而行》的“关闭评论区”处理，两者的区别在于是否愿意公开规则。同类事件的处理方式可以帮你判断当前事件处在什么阶段。</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <h4>看数据来源是否可复查</h4>
+              <p>“热度破万”需要看是哪个平台的什么指标。爱奇艺站内热度值、腾讯视频播放量、豆瓣评分人数、微博话题阅读量，这四个指标不能直接比较。比如《长夜将明》收官热度值9200是在爱奇艺，和腾讯视频的“热度”不是同一套算法。看到数据先找平台和指标名，找不到就跳过。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section-block" id="faq">
+        <div class="section-header">
+          <h2><span class="accent"></span>常见问答</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>《暗潮》的署名争议目前有定论了吗？</summary>
+            <div class="faq-answer">截至2026年11月8日没有官方定论。制片方11月6日声明称合同包含改编授权，但未展示署名条款原文。苏未声11月5日微博表示“不反对改编，反对的是抹去故事原创署名”。编剧协会未公开介入。豆瓣评分从8.4降至8.1反映的是观众情绪，不是法律判断。</div>
+          </details>
+          <details>
+            <summary>《跃上高阶职场》第三季赛制和上一季有什么不同？</summary>
+            <div class="faq-answer">11月6日预告片显示新增“限时提案”环节，选手需在90分钟内完成方案并接受导师质询。上一季的“团队重组”环节被取消，改为固定分组。导师席从2人增至3人，刘念、周远、程一舟各带一组。具体评分规则尚未公布。</div>
+          </details>
+          <details>
+            <summary>林澈广州站加场票好抢吗？</summary>
+            <div class="faq-answer">11月12日12:00开售，大麦平台实名限购2张。参考首场11月21日开票时的情况：8.2万想看、2万张票，约4人抢1张。加场后总票量翻倍，但想看的增量也在涨——加场消息发布后24小时内新增想看约6000人。建议提前填好收货地址和观演人信息。</div>
+          </details>
+          <details>
+            <summary>《长夜将明》结局的时间线问题编剧怎么解释的？</summary>
+            <div class="faq-answer">编剧陆遥11月4日发布2800字手记，重点解释三处：第18集赵明远手机时间显示22:17与后续监控画面22:43之间的26分钟差额；第23集火车站手表特写与广播时间的2分钟错位；第24集真凶回忆片段中出现的“2019年日历”实为道具失误，承认第14集的道具时间有误。</div>
+          </details>
+          <details>
+            <summary>《逆光而行》番位调整后陈屿方面回应了吗？</summary>
+            <div class="faq-answer">陈屿工作室截至11月8日未发布正式声明。10月31日工作室官方微博点赞了粉丝后援会要求“明确合同条款”的帖子，随后取消点赞。后援会11月1日发布的声明提到“签约时约定按姓氏笔画排序”，但未出示合同截图。剧方11月2日关闭官微评论区前未做说明。</div>
+          </details>
+          <details>
+            <summary>《雾港》第二季什么时候能看？</summary>
+            <div class="faq-answer">导演11月6日媒体群访表示剧本大纲已完成，主演张铎确认回归，预计2027年第二季度开机。按同类型剧集制作周期推算，上线时间可能在2028年上半年。第一季共24集，目前豆瓣7.6分，第二季暂无平台官宣。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="section-block" id="comments">
+        <div class="section-header">
+          <h2><span class="accent"></span>用户评论</h2>
+          <span class="section-more">共 2,340 条</span>
+        </div>
+        <div class="comment-list">
+          <div class="comment-item">
+            <div class="comment-avatar">橘</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-name">橘子汽水没气泡</span><span class="comment-date">11-08 10:23</span></div>
+              <div class="comment-text">《暗潮》前六集确实好，苏未声那个事出来之后我二刷都带情绪了。第六集审讯室那场戏拍得真好，可惜了。</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">瓜</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-name">瓜田里的猹</span><span class="comment-date">11-08 09:47</span></div>
+              <div class="comment-text">林澈加场广州，我8.2万分之一。就想问首场没抢到的这次能轮上吗？</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">小</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-name">小鹿乱撞不撞墙</span><span class="comment-date">11-08 08:15</span></div>
+              <div class="comment-text">《跃上高阶职场》第三季导师加了刘念，感觉又要走“毒舌点评”路线了。第一季第二季赛制都还行，第三季改限时提案希望别搞成撕逼大会。</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">张</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-name">张大爷看剧</span><span class="comment-date">11-07 22:30</span></div>
+              <div class="comment-text">《雾港》张铎那个审讯室独白我看了三遍。剧本写得好，演得也好。第二季2028年也太久了。</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">番</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-name">番位ptsd患者</span><span class="comment-date">11-07 20:11</span></div>
+              <div class="comment-text">《逆光而行》那个番位，直接关评论区是几个意思。要么一开始就说清楚排序规则，要么就别动。跟《雾港》学学。</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">陆</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-name">陆遥的键盘</span><span class="comment-date">11-07 18:05</span></div>
+              <div class="comment-text">编剧手记2800字我认真看了。第14集道具时间有误这个承认得还算痛快。但第23集火车站那个2分钟错位，解释有点绕。</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">吃</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-name">吃瓜不吐皮</span><span class="comment-date">11-07 15:42</span></div>
+              <div class="comment-text">苏未声那条微博转到我首页的时候配文是“吃瓜网818看到的”，结果点进来发现比微博上全多了。合同日期截图和打码那段对比着看确实有问题。</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">阿</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-name">阿肆的吉他</span><span class="comment-date">11-07 11:20</span></div>
+              <div class="comment-text">阿肆南京场没人抢，林澈广州场4个人抢1张。这个世界就是这么参差。</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">暗</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-name">暗潮第8集弃了</span><span class="comment-date">11-06 23:08</span></div>
+              <div class="comment-text">第7集开始节奏就拖了，署名争议出来之前就弃了。8.4降到8.1真不全是署名的事，剧本后半段确实没撑住。</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">周</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-name">周末看什么</span><span class="comment-date">11-06 19:33</span></div>
+              <div class="comment-text">《长夜将明》结局那个真凶揭晓我猜对了，但时间线确实乱。编剧解释的26分钟差额我对着剧又看了一遍，能对上但很勉强。</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">路</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-name">路过打酱油的</span><span class="comment-date">11-06 14:50</span></div>
+              <div class="comment-text">纯路人，陈屿是谁？番位第二第三有啥区别吗？</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">一</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-name">一只快乐的小废物</span><span class="comment-date">11-05 21:17</span></div>
+              <div class="comment-text">刘念在《初入职场》里骂哭实习生那个片段我现在看到他还ptsd。这次当导师希望选手心理素质过硬。</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">大</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-name">大麦一生黑</span><span class="comment-date">11-05 16:08</span></div>
+              <div class="comment-text">加场消息一出二手平台票价降了，但降完还是溢价35%。黄牛永远不亏。</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">片</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-name">片头字幕考据党</span><span class="comment-date">11-05 10:44</span></div>
+              <div class="comment-text">专门截了《暗潮》片头字幕，确实没有“故事原创：苏未声”。但片尾字幕有一行很小的“改编自苏未声小说《暗潮》”，位置在滚动字幕第3屏。这个细节两边声明都没提。</div>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">今</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-name">今天吃什么好呢</span><span class="comment-date">11-04 20:02</span></div>
+              <div class="comment-text">《雾港》第二季2028年才能看，到时候我孩子都会打酱油了。</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="section-block" id="news">
+        <div class="section-header">
+          <h2><span class="accent"></span>相关资讯</h2>
+        </div>
+        <div class="news-list">
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-dc/600/400" alt="《暗潮》制片方声明截图" class="news-thumb" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <h3 class="news-title">《暗潮》制片方公开合同签署时间，署名条款仍打码</h3>
+              <p class="news-summary">11月6日补充声明附2019年6月12日合同截图，授权范围条款文字被模糊处理，未提及片头署名具体方案。苏未声微博转发称“打码部分才是关键”。</p>
+              <div class="news-meta">2026-11-06 · 来源：制片方官微、苏未声微博</div>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-zhichang/600/400" alt="综艺导师阵容官宣图" class="news-thumb" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <h3 class="news-title">《跃上高阶职场》第三季新增限时提案环节</h3>
+              <p class="news-summary">11月8日预告片披露赛制变化：选手90分钟内完成方案并接受三位导师质询，上一季的团队重组环节取消。首期节目定档11月15日。</p>
+              <div class="news-meta">2026-11-08 · 来源：腾讯视频官微</div>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-lin/600/400" alt="林澈巡演海报" class="news-thumb" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <h3 class="news-title">林澈广州站加场定档11月22日，12日开票</h3>
+              <p class="news-summary">加场票量约2万张，大麦想看人数在加场消息发布后24小时内新增约6000。首场11月21日已售罄。</p>
+              <div class="news-meta">2026-11-07 · 来源：大麦网、林澈工作室</div>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-wugang2/600/400" alt="《雾港》导演采访现场" class="news-thumb" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <h3 class="news-title">《雾港》导演确认第二季剧本大纲完成</h3>
+              <p class="news-summary">在11月6日媒体群访中透露，张铎已签约回归，预计2027年Q2开机。第一季豆瓣7.6分，站内热度峰值8700。</p>
+              <div class="news-meta">2026-11-06 · 来源：媒体群访记录</div>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-changye/600/400" alt="编剧陆遥微博手记截图" class="news-thumb" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <h3 class="news-title">《长夜将明》编剧承认第14集道具时间有误</h3>
+              <p class="news-summary">11月4日发布的手记中，陆遥逐条解释三处时间线设计，并主动指出第14集日历道具的年份错误。该条微博评论超4700条。</p>
+              <div class="news-meta">2026-11-04 · 来源：陆遥微博</div>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-fanwei/600/400" alt="《逆光而行》海报对比" class="news-thumb" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <h3 class="news-title">《逆光而行》番位调整后官微关闭评论区</h3>
+              <p class="news-summary">10月30日海报更新，陈屿从第三位调至第二位。11月2日剧方关闭官微评论区，未做说明。粉丝后援会声明称合同约定“按姓氏笔画排序”。</p>
+              <div class="news-meta">2026-11-02 · 来源：剧方官微、后援会声明</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="section-block" id="related-tags">
+        <div class="section-header">
+          <h2><span class="accent"></span>相关推荐</h2>
+        </div>
+        <div class="tag-cloud">
+          <a href="#hot-picks">暗潮署名权始末</a>
+          <a href="#hot-picks">苏未声合同条款</a>
+          <a href="#latest-updates">跃上高阶职场赛制</a>
+          <a href="#latest-updates">刘念导师争议</a>
+          <a href="#deep-dive">林澈巡演票价分析</a>
+          <a href="#deep-dive">番位合同排序规则</a>
+          <a href="#news">雾港第二季动态</a>
+          <a href="#comments">长夜将明时间线考据</a>
+          <a href="#guide">娱乐消息信源判断</a>
+          <a href="#faq">片头字幕署名规范</a>
+        </div>
+      </section>
+
+      <!-- 热门榜单 -->
+      <section class="section-block" id="rank-board">
+        <div class="section-header">
+          <h2><span class="accent"></span>热门榜单</h2>
+          <span class="section-more">截至 2026-11-08 12:00</span>
+        </div>
+        <div class="rank-list">
+          <div class="rank-item">
+            <span class="rank-num">1</span>
+            <span class="rank-title">《暗潮》署名争议</span>
+            <span class="rank-score">热度 96 · 讨论 1.2万</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-num">2</span>
+            <span class="rank-title">《跃上高阶职场》第三季阵容官宣</span>
+            <span class="rank-score">热度 92 · 讨论 8600</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-num">3</span>
+            <span class="rank-title">林澈“回声”巡演广州加场</span>
+            <span class="rank-score">热度 89 · 讨论 7400</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-num">4</span>
+            <span class="rank-title">《雾港》配角张铎审讯室独白</span>
+            <span class="rank-score">热度 84 · 讨论 5200</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-num">5</span>
+            <span class="rank-title">《长夜将明》结局时间线争议</span>
+            <span class="rank-score">热度 81 · 讨论 6100</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-num">6</span>
+            <span class="rank-title">《逆光而行》番位海报调整</span>
+            <span class="rank-score">热度 78 · 讨论 4300</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-num">7</span>
+            <span class="rank-title">阿肆南京站开票情况</span>
+            <span class="rank-score">热度 62 · 讨论 1200</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-num">8</span>
+            <span class="rank-title">《雾港》第二季开发确认</span>
+            <span class="rank-score">热度 59 · 讨论 2100</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 投稿互动 -->
+      <section class="section-block" id="submit-zone">
+        <div class="submit-card">
+          <h3>投稿 & 互动</h3>
+          <p>发现片方声明截图、片头字幕变更记录、票务平台数据波动？欢迎投稿。审核通过后会在“最新动态”和“相关资讯”中标注来源。</p>
+          <a href="#comments" class="btn-primary">去评论区聊聊 →</a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右辅助栏 -->
+    <aside class="aux-sidebar">
+      <div class="aux-card">
+        <h3><span class="fire"></span>热榜速览</h3>
+        <ul class="hot-list">
+          <li><a href="#hot-picks"><span class="hot-index">1</span>暗潮署名争议</a></li>
+          <li><a href="#hot-picks"><span class="hot-index">2</span>跃上高阶职场第三季</a></li>
+          <li><a href="#hot-picks"><span class="hot-index">3</span>林澈广州加场</a></li>
+          <li><a href="#hot-picks"><span class="hot-index">4</span>雾港张铎独白</a></li>
+          <li><a href="#hot-picks"><span class="hot-index">5</span>长夜将明结局</a></li>
+          <li><a href="#hot-picks"><span class="hot-index">6</span>逆光而行番位</a></li>
+          <li><a href="#hot-picks"><span class="hot-index">7</span>苏未声微博</a></li>
+          <li><a href="#hot-picks"><span class="hot-index">8</span>陆遥创作手记</a></li>
+        </ul>
+      </div>
+      <div class="aux-card">
+        <h3><span class="fire"></span>最近更新</h3>
+        <ul class="hot-list">
+          <li><a href="#latest-updates"><span class="hot-index">·</span>11-08 跃上高阶职场预告</a></li>
+          <li><a href="#latest-updates"><span class="hot-index">·</span>11-07 林澈加场开票时间</a></li>
+          <li><a href="#latest-updates"><span class="hot-index">·</span>11-06 暗潮第二份声明</a></li>
+          <li><a href="#latest-updates"><span class="hot-index">·</span>11-06 雾港导演群访</a></li>
+          <li><a href="#latest-updates"><span class="hot-index">·</span>11-05 苏未声再回应</a></li>
+          <li><a href="#latest-updates"><span class="hot-index">·</span>11-04 陆遥创作手记</a></li>
+        </ul>
+      </div>
+      <div class="aux-card">
+        <h3><span class="fire"></span>条目时间线</h3>
+        <ul class="hot-list">
+          <li><a href="#deep-dive"><span class="hot-index">·</span>10-28 林澈巡演官宣</a></li>
+          <li><a href="#deep-dive"><span class="hot-index">·</span>10-30 逆光而行海报调整</a></li>
+          <li><a href="#deep-dive"><span class="hot-index">·</span>11-02 苏未声首次发文</a></li>
+          <li><a href="#deep-dive"><span class="hot-index">·</span>11-03 长夜将明收官</a></li>
+          <li><a href="#deep-dive"><span class="hot-index">·</span>11-05 制片方第一份声明</a></li>
+          <li><a href="#deep-dive"><span class="hot-index">·</span>11-06 制片方补充声明</a></li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- 页脚 -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo-text">吃瓜网<span style="color:#ffd166;">818</span></div>
+      <p>聚焦影视剧集、综艺赛程、音乐演出与明星公开动态的讨论聚合。覆盖2026年10月至11月间的剧集口碑变化、综艺阵容官宣、巡演票务数据，以及署名争议、番位调整等具体事件的信源拆解。</p>
+    </div>
+    <div class="footer-col">
+      <h4>内容频道</h4>
+      <a href="#hot-picks">热播剧集</a>
+      <a href="#hot-picks">综艺赛程</a>
+      <a href="#hot-picks">音乐演出</a>
+      <a href="#hot-picks">番位争议</a>
+    </div>
+    <div class="footer-col">
+      <h4>深度内容</h4>
+      <a href="#deep-dive">剧本解析</a>
+      <a href="#guide">信源判断</a>
+      <a href="#faq">规则问答</a>
+      <a href="#news">片方声明</a>
+    </div>
+    <div class="footer-col">
+      <h4>互动</h4>
+      <a href="#comments">用户评论</a>
+      <a href="#submit-zone">投稿入口</a>
+      <a href="#rank-board">热门榜单</a>
+      <a href="#related-tags">相关推荐</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>本站内容为示例数据，用于展示信息聚合形式。最后更新：2026-11-08</span>
+    <span>吃瓜网818 · 内容聚合示例</span>
+  </div>
+</footer>
+
+<!-- 回到顶部 -->
+<button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+<script>
+  (function() {
+    // 回到顶部
+    var backBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > window.innerHeight) {
+        backBtn.classList.add('show');
+      } else {
+        backBtn.classList.remove('show');
+      }
+    });
+    backBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 移动端菜单
+    var hamburger = document.getElementById('hamburgerBtn');
+    var sidebar = document.getElementById('channelSidebar');
+    var overlay = document.getElementById('overlay');
+
+    function openMenu() {
+      sidebar.classList.add('mobile-open');
+      overlay.classList.add('active');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      sidebar.classList.remove('mobile-open');
+      overlay.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    hamburger.addEventListener('click', function() {
+      if (sidebar.classList.contains('mobile-open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+    overlay.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && sidebar.classList.contains('mobile-open')) {
+        closeMenu();
+      }
+    });
+    // 移动端点击导航后自动收起
+    sidebar.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        if (window.innerWidth <= 740) {
+          closeMenu();
+        }
+      });
+    });
+
+    // 频道高亮
+    var channelLinks = document.querySelectorAll('.channel-list a');
+    var sections = [];
+    channelLinks.forEach(function(link) {
+      var id = link.getAttribute('href').replace('#', '');
+      var el = document.getElementById(id);
+      if (el) sections.push({ id: id, el: el, link: link });
+    });
+    window.addEventListener('scroll', function() {
+      var scrollPos = window.scrollY + 140;
+      var current = null;
+      sections.forEach(function(s) {
+        if (s.el.offsetTop <= scrollPos) {
+          current = s;
+        }
+      });
+      channelLinks.forEach(function(l) { l.classList.remove('active'); });
+      if (current) current.link.classList.add('active');
+    });
+
+    // 搜索
+    var searchInput = document.getElementById('searchInput');
+    var allSearchable = document.querySelectorAll('.card-title, .update-title, .news-title, .rank-title, .comment-text, .faq-list summary');
+    var noResult = document.createElement('div');
+    noResult.className = 'no-result';
+    noResult.textContent = '没有找到匹配的内容，换个关键词试试。';
+    var mainContent = document.querySelector('.main-content');
+    mainContent.appendChild(noResult);
+
+    searchInput.addEventListener('input', function() {
+      var q = this.value.trim().toLowerCase();
+      if (!q) {
+        noResult.classList.remove('show');
+        document.querySelectorAll('.content-card, .update-item, .news-item, .rank-item, .comment-item, .faq-list details').forEach(function(el) {
+          el.style.display = '';
+        });
+        return;
+      }
+      var found = 0;
+      document.querySelectorAll('.content-card, .update-item, .news-item, .rank-item, .comment-item, .faq-list details').forEach(function(el) {
+        var text = el.textContent.toLowerCase();
+        if (text.indexOf(q) > -1) {
+          el.style.display = '';
+          found++;
+        } else {
+          el.style.display = 'none';
+        }
+      });
+      if (found === 0) {
+        noResult.classList.add('show');
+      } else {
+        noResult.classList.remove('show');
+      }
+    });
+  })();
+</script>
+
+<!-- 结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "吃瓜网818",
+  "description": "吃瓜网818汇聚娱乐圈最新动态、综艺热榜与争议事件深度解析，涵盖影视剧集、明星八卦、选秀综艺等具体条目。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "《暗潮》的署名争议目前有定论了吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "截至2026年11月8日没有官方定论。制片方11月6日声明称合同包含改编授权，但未展示署名条款原文。苏未声11月5日微博表示不反对改编，反对的是抹去故事原创署名。编剧协会未公开介入。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "《跃上高阶职场》第三季赛制和上一季有什么不同？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "11月6日预告片显示新增限时提案环节，选手需在90分钟内完成方案并接受导师质询。上一季的团队重组环节被取消，改为固定分组。导师席从2人增至3人，刘念、周远、程一舟各带一组。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "林澈广州站加场票好抢吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "11月12日12:00开售，大麦平台实名限购2张。参考首场11月21日开票时的情况：8.2万想看、2万张票，约4人抢1张。加场后总票量翻倍，建议提前填好收货地址和观演人信息。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "《长夜将明》结局的时间线问题编剧怎么解释的？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "编剧陆遥11月4日发布2800字手记，重点解释三处：第18集手机时间与监控画面的26分钟差额；第23集火车站手表特写与广播时间的2分钟错位；第24集真凶回忆片段中的道具失误。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "《逆光而行》番位调整后陈屿方面回应了吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "陈屿工作室截至11月8日未发布正式声明。10月31日工作室官方微博点赞了粉丝后援会要求明确合同条款的帖子，随后取消点赞。剧方11月2日关闭官微评论区前未做说明。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "《雾港》第二季什么时候能看？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "导演11月6日媒体群访表示剧本大纲已完成，主演张铎确认回归，预计2027年第二季度开机。按同类型剧集制作周期推算，上线时间可能在2028年上半年。"
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+          </html>
